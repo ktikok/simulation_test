@@ -1,0 +1,16 @@
+#This macro can not be executed standalone
+/vis/disable
+/run/numberOfThreads 1
+/run/initialize
+/run/verbose 1
+
+/DRsim/generator/randx 0
+/DRsim/generator/randy 0
+/DRsim/generator/theta -0.97694993
+/DRsim/generator/phi 0.017453293
+/DRsim/generator/y0 -3.170329668
+/DRsim/generator/z0 -14.62319386
+
+/gun/particle e-
+/gun/energy 1 eV
+/run/beamOn 1

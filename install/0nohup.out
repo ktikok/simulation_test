@@ -1,0 +1,829 @@
+Available UI session types: [ Qt, Xm, GAG, tcsh, csh ]
+Fontconfig error: Cannot load default config file
+0>> x : 3050.15, y : 0, z : 33.8885 center_distance : 3050.33
+1>> x : 3049.97, y : 0, z : 101.663 center_distance : 3051.67
+2>> x : 3049.18, y : 0, z : 169.419 center_distance : 3053.89
+3>> x : 3047.78, y : 0, z : 237.168 center_distance : 3057
+4>> x : 3045.78, y : 0, z : 304.905 center_distance : 3061
+5>> x : 3043.17, y : 0, z : 372.609 center_distance : 3065.89
+6>> x : 3039.96, y : 0, z : 440.278 center_distance : 3071.68
+7>> x : 3036.17, y : 0, z : 507.905 center_distance : 3078.36
+8>> x : 3031.8, y : 0, z : 575.487 center_distance : 3085.94
+9>> x : 3026.87, y : 0, z : 643.019 center_distance : 3094.42
+10>> x : 3021.39, y : 0, z : 710.498 center_distance : 3103.8
+11>> x : 3015.37, y : 0, z : 777.92 center_distance : 3114.1
+12>> x : 3008.82, y : 0, z : 845.282 center_distance : 3125.3
+13>> x : 3001.77, y : 0, z : 912.579 center_distance : 3137.42
+14>> x : 2994.23, y : 0, z : 979.827 center_distance : 3150.47
+15>> x : 2986.21, y : 0, z : 1047.02 center_distance : 3164.44
+16>> x : 2977.74, y : 0, z : 1114.16 center_distance : 3179.35
+17>> x : 2968.83, y : 0, z : 1181.25 center_distance : 3195.2
+18>> x : 2959.51, y : 0, z : 1248.31 center_distance : 3212.01
+19>> x : 2949.78, y : 0, z : 1315.35 center_distance : 3229.76
+20>> x : 2939.69, y : 0, z : 1382.37 center_distance : 3248.49
+21>> x : 2929.22, y : 0, z : 1449.38 center_distance : 3268.19
+22>> x : 2918.43, y : 0, z : 1516.4 center_distance : 3288.87
+23>> x : 2907.31, y : 0, z : 1583.42 center_distance : 3310.54
+24>> x : 2895.9, y : 0, z : 1650.48 center_distance : 3333.22
+25>> x : 2884.22, y : 0, z : 1717.58 center_distance : 3356.9
+26>> x : 2872.28, y : 0, z : 1784.73 center_distance : 3381.61
+27>> x : 2860.11, y : 0, z : 1851.98 center_distance : 3407.36
+28>> x : 2847.72, y : 0, z : 1919.33 center_distance : 3434.15
+29>> x : 2835.14, y : 0, z : 1986.81 center_distance : 3462
+30>> x : 2822.38, y : 0, z : 2054.45 center_distance : 3490.93
+31>> x : 2809.46, y : 0, z : 2122.26 center_distance : 3520.95
+32>> x : 2796.41, y : 0, z : 2190.27 center_distance : 3552.07
+33>> x : 2783.23, y : 0, z : 2258.53 center_distance : 3584.32
+34>> x : 2769.95, y : 0, z : 2327.02 center_distance : 3617.68
+35>> x : 2756.59, y : 0, z : 2395.78 center_distance : 3652.2
+36>> x : 2743.16, y : 0, z : 2464.87 center_distance : 3687.88
+37>> x : 2729.66, y : 0, z : 2534.29 center_distance : 3724.74
+38>> x : 2716.14, y : 0, z : 2604.09 center_distance : 3762.81
+39>> x : 2702.59, y : 0, z : 2674.29 center_distance : 3802.08
+40>> x : 2689.03, y : 0, z : 2744.93 center_distance : 3842.6
+41>> x : 2675.47, y : 0, z : 2816.04 center_distance : 3884.36
+42>> x : 2661.94, y : 0, z : 2887.66 center_distance : 3927.4
+43>> x : 2648.43, y : 0, z : 2959.85 center_distance : 3971.76
+44>> x : 2634.95, y : 0, z : 3032.59 center_distance : 4017.41
+45>> x : 2621.53, y : 0, z : 3105.95 center_distance : 4064.4
+46>> x : 2608.17, y : 0, z : 3179.96 center_distance : 4112.75
+47>> x : 2594.88, y : 0, z : 3254.66 center_distance : 4162.48
+48>> x : 2581.68, y : 0, z : 3330.12 center_distance : 4213.64
+49>> x : 2568.55, y : 0, z : 3406.35 center_distance : 4266.23
+50>> x : 2555.53, y : 0, z : 3483.4 center_distance : 4320.28
+51>> x : 2542.6, y : 0, z : 3561.32 center_distance : 4375.83
+-------------------------------------endcap-----------------------------------------
+0>> x : 2496.81, y : 0, z : 3593.58 center_distance : 4375.83
+-------------------------------------endcap-----------------------------------------
+1>> x : 2450.61, y : 0, z : 3625.24 center_distance : 4375.83
+-------------------------------------endcap-----------------------------------------
+2>> x : 2404.01, y : 0, z : 3656.31 center_distance : 4375.83
+-------------------------------------endcap-----------------------------------------
+3>> x : 2357.01, y : 0, z : 3686.78 center_distance : 4375.83
+-------------------------------------endcap-----------------------------------------
+4>> x : 2309.63, y : 0, z : 3716.65 center_distance : 4375.83
+-------------------------------------endcap-----------------------------------------
+5>> x : 2261.87, y : 0, z : 3745.91 center_distance : 4375.83
+-------------------------------------endcap-----------------------------------------
+6>> x : 2213.74, y : 0, z : 3774.55 center_distance : 4375.83
+-------------------------------------endcap-----------------------------------------
+7>> x : 2165.24, y : 0, z : 3802.58 center_distance : 4375.83
+-------------------------------------endcap-----------------------------------------
+8>> x : 2116.39, y : 0, z : 3829.98 center_distance : 4375.83
+-------------------------------------endcap-----------------------------------------
+9>> x : 2067.2, y : 0, z : 3856.76 center_distance : 4375.83
+-------------------------------------endcap-----------------------------------------
+10>> x : 2017.66, y : 0, z : 3882.9 center_distance : 4375.83
+-------------------------------------endcap-----------------------------------------
+11>> x : 1967.8, y : 0, z : 3908.41 center_distance : 4375.83
+-------------------------------------endcap-----------------------------------------
+12>> x : 1917.61, y : 0, z : 3933.28 center_distance : 4375.83
+-------------------------------------endcap-----------------------------------------
+13>> x : 1867.11, y : 0, z : 3957.5 center_distance : 4375.83
+-------------------------------------endcap-----------------------------------------
+14>> x : 1816.3, y : 0, z : 3981.07 center_distance : 4375.83
+-------------------------------------endcap-----------------------------------------
+15>> x : 1765.2, y : 0, z : 4003.99 center_distance : 4375.83
+-------------------------------------endcap-----------------------------------------
+16>> x : 1713.8, y : 0, z : 4026.26 center_distance : 4375.83
+-------------------------------------endcap-----------------------------------------
+17>> x : 1662.13, y : 0, z : 4047.87 center_distance : 4375.83
+-------------------------------------endcap-----------------------------------------
+18>> x : 1610.18, y : 0, z : 4068.81 center_distance : 4375.83
+-------------------------------------endcap-----------------------------------------
+19>> x : 1557.97, y : 0, z : 4089.09 center_distance : 4375.83
+-------------------------------------endcap-----------------------------------------
+20>> x : 1505.5, y : 0, z : 4108.69 center_distance : 4375.83
+-------------------------------------endcap-----------------------------------------
+21>> x : 1452.79, y : 0, z : 4127.63 center_distance : 4375.83
+-------------------------------------endcap-----------------------------------------
+22>> x : 1399.84, y : 0, z : 4145.88 center_distance : 4375.83
+-------------------------------------endcap-----------------------------------------
+23>> x : 1346.66, y : 0, z : 4163.46 center_distance : 4375.83
+-------------------------------------endcap-----------------------------------------
+24>> x : 1293.26, y : 0, z : 4180.36 center_distance : 4375.83
+-------------------------------------endcap-----------------------------------------
+25>> x : 1239.64, y : 0, z : 4196.57 center_distance : 4375.83
+-------------------------------------endcap-----------------------------------------
+26>> x : 1185.83, y : 0, z : 4212.09 center_distance : 4375.83
+-------------------------------------endcap-----------------------------------------
+27>> x : 1131.82, y : 0, z : 4226.92 center_distance : 4375.83
+-------------------------------------endcap-----------------------------------------
+28>> x : 1077.62, y : 0, z : 4241.06 center_distance : 4375.83
+-------------------------------------endcap-----------------------------------------
+29>> x : 1023.25, y : 0, z : 4254.51 center_distance : 4375.83
+-------------------------------------endcap-----------------------------------------
+30>> x : 968.709, y : 0, z : 4267.26 center_distance : 4375.83
+-------------------------------------endcap-----------------------------------------
+31>> x : 914.009, y : 0, z : 4279.31 center_distance : 4375.83
+-------------------------------------endcap-----------------------------------------
+32>> x : 859.161, y : 0, z : 4290.66 center_distance : 4375.83
+-------------------------------------endcap-----------------------------------------
+33>> x : 804.172, y : 0, z : 4301.3 center_distance : 4375.83
+-------------------------------------endcap-----------------------------------------
+34>> x : 749.051, y : 0, z : 4311.24 center_distance : 4375.83
+-------------------------------------endcap-----------------------------------------
+35>> x : 693.807, y : 0, z : 4320.48 center_distance : 4375.83
+-------------------------------------endcap-----------------------------------------
+36>> x : 638.449, y : 0, z : 4329 center_distance : 4375.83
+-------------------------------------endcap-----------------------------------------
+37>> x : 582.987, y : 0, z : 4336.82 center_distance : 4375.83
+-------------------------------------endcap-----------------------------------------
+38>> x : 527.43, y : 0, z : 4343.93 center_distance : 4375.83
+-------------------------------------endcap-----------------------------------------
+39>> x : 471.786, y : 0, z : 4350.32 center_distance : 4375.83
+G4WT0 > /control/saveHistory 
+G4WT0 > /run/verbose 2
+G4WT0 > /run/initialize 
+G4WT0 > /run/physicsModified 
+G4WT0 > /control/verbose 2
+G4WT0 > /tracking/storeTrajectory 2
+G4WT0 > /gui/addIcon "Open macro file" open /control/execute
+G4WT0 > /gui/addIcon "Save viewer state" save /vis/viewer/save
+G4WT0 > /gui/addIcon "Move" move
+G4WT0 > /gui/addIcon "Pick" pick
+G4WT0 > /gui/addIcon "Zoom out" zoom_out
+G4WT0 > /gui/addIcon "Zoom in" zoom_in
+G4WT0 > /gui/addIcon "Rotate" rotate
+G4WT0 > /gui/addIcon "Hidden line removal" hidden_line_removal
+G4WT0 > /gui/addIcon "Hidden line and hidden surface removal" hidden_line_and_surface_removal
+G4WT0 > /gui/addIcon "Surfaces" solid
+G4WT0 > /gui/addIcon "Wireframe" wireframe
+G4WT0 > /gui/addIcon "Perspective" perspective
+G4WT0 > /gui/addIcon "Orthographic" ortho
+G4WT0 > /gui/addMenu file File
+G4WT0 > /gui/addButton file Quit exit
+G4WT0 > /gui/addMenu run Run
+G4WT0 > /gui/addButton run "beamOn 1" "/run/beamOn 1"
+G4WT0 > /gui/addMenu gun Gun
+G4WT0 > /gui/addButton gun "50 MeV" "/gun/energy 50 MeV"
+G4WT0 > /gui/addButton gun "1 GeV" "/gun/energy 1 GeV"
+G4WT0 > /gui/addButton gun "10 GeV" "/gun/energy 10 GeV"
+G4WT0 > /gui/addButton gun "20 GeV" "/gun/energy 20 GeV"
+G4WT0 > /gui/addButton gun "60 GeV" "/gun/energy 60 GeV"
+G4WT0 > /gui/addButton gun "e-" "/gun/particle e-"
+G4WT0 > /gui/addButton gun "pi0" "/gun/particle pi0"
+G4WT0 > /gui/addButton gun "pi+" "/gun/particle pi+"
+G4WT0 > /gui/addButton gun "neutron" "/gun/particle neutron"
+G4WT0 > /gui/addButton gun "proton" "/gun/particle proton"
+G4WT0 > /gui/addButton gun "kaon0L" "/gun/particle kaon0L"
+G4WT0 > /gui/addMenu viewer Viewer
+G4WT0 > /gui/addButton viewer "Set style surface" "/vis/viewer/set/style surface"
+G4WT0 > /gui/addButton viewer "Set style wireframe" "/vis/viewer/set/style wireframe"
+G4WT0 > /gui/addButton viewer "Refresh viewer" "/vis/viewer/refresh"
+G4WT0 > /gui/addButton viewer "Update viewer (interaction or end-of-file)" "/vis/viewer/update"
+G4WT0 > /gui/addButton viewer "Flush viewer (= refresh + update)" "/vis/viewer/flush"
+G4WT0 > /gui/addButton viewer "Update scene" "/vis/scene/notifyHandlers"
+G4WT0 > /gui/addIcon "Run beam on" user_icon "/run/beamOn 1" run.png
+G4WT0 > /DRsim/generator/randx 0
+G4WT0 > /DRsim/generator/randy 0
+G4WT0 > /DRsim/generator/theta -0.95076999
+G4WT0 > /DRsim/generator/phi 0
+G4WT0 > /DRsim/generator/y0 0
+G4WT0 > /DRsim/generator/z0 0
+G4WT0 > /gun/particle e-
+G4WT0 > /gun/energy 1 eV
+G4WT0 > ### Run 0 starts on worker thread 0.
+G4WT0 > --> Event 0 starts with initial seeds (17249164,38107731).
+G4WT0 > <BRC0> is not found.
+G4WT0 > <BLC0> is not found.
+G4WT0 > <BRC1> is not found.
+G4WT0 > <BLC1> is not found.
+G4WT0 > <BRC2> is not found.
+G4WT0 > <BLC2> is not found.
+G4WT0 > <BRC3> is not found.
+G4WT0 > <BLC3> is not found.
+G4WT0 > <BRC4> is not found.
+G4WT0 > <BLC4> is not found.
+G4WT0 > <BRC5> is not found.
+G4WT0 > <BLC5> is not found.
+G4WT0 > <BRC6> is not found.
+G4WT0 > <BLC6> is not found.
+G4WT0 > <BRC7> is not found.
+G4WT0 > <BLC7> is not found.
+G4WT0 > <BRC8> is not found.
+G4WT0 > <BLC8> is not found.
+G4WT0 > <BRC9> is not found.
+G4WT0 > <BLC9> is not found.
+G4WT0 > <BRC10> is not found.
+G4WT0 > <BLC10> is not found.
+G4WT0 > <BRC11> is not found.
+G4WT0 > <BLC11> is not found.
+G4WT0 > <BRC12> is not found.
+G4WT0 > <BLC12> is not found.
+G4WT0 > <BRC13> is not found.
+G4WT0 > <BLC13> is not found.
+G4WT0 > <BRC14> is not found.
+G4WT0 > <BLC14> is not found.
+G4WT0 > <BRC15> is not found.
+G4WT0 > <BLC15> is not found.
+G4WT0 > <BRC16> is not found.
+G4WT0 > <BLC16> is not found.
+G4WT0 > <BRC17> is not found.
+G4WT0 > <BLC17> is not found.
+G4WT0 > <BRC18> is not found.
+G4WT0 > <BLC18> is not found.
+G4WT0 > <BRC19> is not found.
+G4WT0 > <BLC19> is not found.
+G4WT0 > <BRC20> is not found.
+G4WT0 > <BLC20> is not found.
+G4WT0 > <BRC21> is not found.
+G4WT0 > <BLC21> is not found.
+G4WT0 > <BRC22> is not found.
+G4WT0 > <BLC22> is not found.
+G4WT0 > <BRC23> is not found.
+G4WT0 > <BLC23> is not found.
+G4WT0 > <BRC24> is not found.
+G4WT0 > <BLC24> is not found.
+G4WT0 > <BRC25> is not found.
+G4WT0 > <BLC25> is not found.
+G4WT0 > <BRC26> is not found.
+G4WT0 > <BLC26> is not found.
+G4WT0 > <BRC27> is not found.
+G4WT0 > <BLC27> is not found.
+G4WT0 > <BRC28> is not found.
+G4WT0 > <BLC28> is not found.
+G4WT0 > <BRC29> is not found.
+G4WT0 > <BLC29> is not found.
+G4WT0 > <BRC30> is not found.
+G4WT0 > <BLC30> is not found.
+G4WT0 > <BRC31> is not found.
+G4WT0 > <BLC31> is not found.
+G4WT0 > <BRC32> is not found.
+G4WT0 > <BLC32> is not found.
+G4WT0 > <BRC33> is not found.
+G4WT0 > <BLC33> is not found.
+G4WT0 > <BRC34> is not found.
+G4WT0 > <BLC34> is not found.
+G4WT0 > <BRC35> is not found.
+G4WT0 > <BLC35> is not found.
+G4WT0 > <BRC36> is not found.
+G4WT0 > <BLC36> is not found.
+G4WT0 > <BRC37> is not found.
+G4WT0 > <BLC37> is not found.
+G4WT0 > <BRC38> is not found.
+G4WT0 > <BLC38> is not found.
+G4WT0 > <BRC39> is not found.
+G4WT0 > <BLC39> is not found.
+G4WT0 > <BRC40> is not found.
+G4WT0 > <BLC40> is not found.
+G4WT0 > <BRC41> is not found.
+G4WT0 > <BLC41> is not found.
+G4WT0 > <BRC42> is not found.
+G4WT0 > <BLC42> is not found.
+G4WT0 > <BRC43> is not found.
+G4WT0 > <BLC43> is not found.
+G4WT0 > <BRC44> is not found.
+G4WT0 > <BLC44> is not found.
+G4WT0 > <BRC45> is not found.
+G4WT0 > <BLC45> is not found.
+G4WT0 > <BRC46> is not found.
+G4WT0 > <BLC46> is not found.
+G4WT0 > <BRC47> is not found.
+G4WT0 > <BLC47> is not found.
+G4WT0 > <BRC48> is not found.
+G4WT0 > <BLC48> is not found.
+G4WT0 > <BRC49> is not found.
+G4WT0 > <BLC49> is not found.
+G4WT0 > <BRC50> is not found.
+G4WT0 > <BLC50> is not found.
+G4WT0 > <BRC51> is not found.
+G4WT0 > <BLC51> is not found.
+G4WT0 > <ERC0> is not found.
+G4WT0 > <ELC0> is not found.
+G4WT0 > <ERC1> is not found.
+G4WT0 > <ELC1> is not found.
+G4WT0 > <ERC2> is not found.
+G4WT0 > <ELC2> is not found.
+G4WT0 > <ERC3> is not found.
+G4WT0 > <ELC3> is not found.
+G4WT0 > <ERC4> is not found.
+G4WT0 > <ELC4> is not found.
+G4WT0 > <ERC5> is not found.
+G4WT0 > <ELC5> is not found.
+G4WT0 > <ERC6> is not found.
+G4WT0 > <ELC6> is not found.
+G4WT0 > <ERC7> is not found.
+G4WT0 > <ELC7> is not found.
+G4WT0 > <ERC8> is not found.
+G4WT0 > <ELC8> is not found.
+G4WT0 > <ERC9> is not found.
+G4WT0 > <ELC9> is not found.
+G4WT0 > <ERC10> is not found.
+G4WT0 > <ELC10> is not found.
+G4WT0 > <ERC11> is not found.
+G4WT0 > <ELC11> is not found.
+G4WT0 > <ERC12> is not found.
+G4WT0 > <ELC12> is not found.
+G4WT0 > <ERC13> is not found.
+G4WT0 > <ELC13> is not found.
+G4WT0 > <ERC14> is not found.
+G4WT0 > <ELC14> is not found.
+G4WT0 > <ERC15> is not found.
+G4WT0 > <ELC15> is not found.
+G4WT0 > <ERC16> is not found.
+G4WT0 > <ELC16> is not found.
+G4WT0 > <ERC17> is not found.
+G4WT0 > <ELC17> is not found.
+G4WT0 > <ERC18> is not found.
+G4WT0 > <ELC18> is not found.
+G4WT0 > <ERC19> is not found.
+G4WT0 > <ELC19> is not found.
+G4WT0 > <ERC20> is not found.
+G4WT0 > <ELC20> is not found.
+G4WT0 > <ERC21> is not found.
+G4WT0 > <ELC21> is not found.
+G4WT0 > <ERC22> is not found.
+G4WT0 > <ELC22> is not found.
+G4WT0 > <ERC23> is not found.
+G4WT0 > <ELC23> is not found.
+G4WT0 > <ERC24> is not found.
+G4WT0 > <ELC24> is not found.
+G4WT0 > <ERC25> is not found.
+G4WT0 > <ELC25> is not found.
+G4WT0 > <ERC26> is not found.
+G4WT0 > <ELC26> is not found.
+G4WT0 > <ERC27> is not found.
+G4WT0 > <ELC27> is not found.
+G4WT0 > <ERC28> is not found.
+G4WT0 > <ELC28> is not found.
+G4WT0 > <ERC29> is not found.
+G4WT0 > <ELC29> is not found.
+G4WT0 > <ERC30> is not found.
+G4WT0 > <ELC30> is not found.
+G4WT0 > <ERC31> is not found.
+G4WT0 > <ELC31> is not found.
+G4WT0 > <ERC32> is not found.
+G4WT0 > <ELC32> is not found.
+G4WT0 > <ERC33> is not found.
+G4WT0 > <ELC33> is not found.
+G4WT0 > <ERC34> is not found.
+G4WT0 > <ELC34> is not found.
+G4WT0 > <ERC35> is not found.
+G4WT0 > <ELC35> is not found.
+G4WT0 > <ERC36> is not found.
+G4WT0 > <ELC36> is not found.
+G4WT0 > <ERC37> is not found.
+G4WT0 > <ELC37> is not found.
+G4WT0 > <ERC38> is not found.
+G4WT0 > <ELC38> is not found.
+G4WT0 > <ERC39> is not found.
+G4WT0 > <ELC39> is not found.
+G4WT0 > Thread-local run terminated.
+G4WT0 > Run Summary
+G4WT0 >   Number of events processed : 1
+G4WT0 >   User=0.040000s Real=0.075276s Sys=0.030000s [Cpu=93.0%]
+G4WT0 > /DRsim/generator/randx 0
+G4WT0 > /DRsim/generator/randy 0
+G4WT0 > /DRsim/generator/theta -0.95076999
+G4WT0 > /DRsim/generator/phi 0
+G4WT0 > /DRsim/generator/y0 0
+G4WT0 > /DRsim/generator/z0 0
+G4WT0 > /gun/particle e-
+G4WT0 > /gun/energy 1 eV
+G4WT0 > ### Run 1 starts on worker thread 0.
+G4WT0 > --> Event 0 starts with initial seeds (39860167,11238793).
+G4WT0 > <BRC0> is not found.
+G4WT0 > <BLC0> is not found.
+G4WT0 > <BRC1> is not found.
+G4WT0 > <BLC1> is not found.
+G4WT0 > <BRC2> is not found.
+G4WT0 > <BLC2> is not found.
+G4WT0 > <BRC3> is not found.
+G4WT0 > <BLC3> is not found.
+G4WT0 > <BRC4> is not found.
+G4WT0 > <BLC4> is not found.
+G4WT0 > <BRC5> is not found.
+G4WT0 > <BLC5> is not found.
+G4WT0 > <BRC6> is not found.
+G4WT0 > <BLC6> is not found.
+G4WT0 > <BRC7> is not found.
+G4WT0 > <BLC7> is not found.
+G4WT0 > <BRC8> is not found.
+G4WT0 > <BLC8> is not found.
+G4WT0 > <BRC9> is not found.
+G4WT0 > <BLC9> is not found.
+G4WT0 > <BRC10> is not found.
+G4WT0 > <BLC10> is not found.
+G4WT0 > <BRC11> is not found.
+G4WT0 > <BLC11> is not found.
+G4WT0 > <BRC12> is not found.
+G4WT0 > <BLC12> is not found.
+G4WT0 > <BRC13> is not found.
+G4WT0 > <BLC13> is not found.
+G4WT0 > <BRC14> is not found.
+G4WT0 > <BLC14> is not found.
+G4WT0 > <BRC15> is not found.
+G4WT0 > <BLC15> is not found.
+G4WT0 > <BRC16> is not found.
+G4WT0 > <BLC16> is not found.
+G4WT0 > <BRC17> is not found.
+G4WT0 > <BLC17> is not found.
+G4WT0 > <BRC18> is not found.
+G4WT0 > <BLC18> is not found.
+G4WT0 > <BRC19> is not found.
+G4WT0 > <BLC19> is not found.
+G4WT0 > <BRC20> is not found.
+G4WT0 > <BLC20> is not found.
+G4WT0 > <BRC21> is not found.
+G4WT0 > <BLC21> is not found.
+G4WT0 > <BRC22> is not found.
+G4WT0 > <BLC22> is not found.
+G4WT0 > <BRC23> is not found.
+G4WT0 > <BLC23> is not found.
+G4WT0 > <BRC24> is not found.
+G4WT0 > <BLC24> is not found.
+G4WT0 > <BRC25> is not found.
+G4WT0 > <BLC25> is not found.
+G4WT0 > <BRC26> is not found.
+G4WT0 > <BLC26> is not found.
+G4WT0 > <BRC27> is not found.
+G4WT0 > <BLC27> is not found.
+G4WT0 > <BRC28> is not found.
+G4WT0 > <BLC28> is not found.
+G4WT0 > <BRC29> is not found.
+G4WT0 > <BLC29> is not found.
+G4WT0 > <BRC30> is not found.
+G4WT0 > <BLC30> is not found.
+G4WT0 > <BRC31> is not found.
+G4WT0 > <BLC31> is not found.
+G4WT0 > <BRC32> is not found.
+G4WT0 > <BLC32> is not found.
+G4WT0 > <BRC33> is not found.
+G4WT0 > <BLC33> is not found.
+G4WT0 > <BRC34> is not found.
+G4WT0 > <BLC34> is not found.
+G4WT0 > <BRC35> is not found.
+G4WT0 > <BLC35> is not found.
+G4WT0 > <BRC36> is not found.
+G4WT0 > <BLC36> is not found.
+G4WT0 > <BRC37> is not found.
+G4WT0 > <BLC37> is not found.
+G4WT0 > <BRC38> is not found.
+G4WT0 > <BLC38> is not found.
+G4WT0 > <BRC39> is not found.
+G4WT0 > <BLC39> is not found.
+G4WT0 > <BRC40> is not found.
+G4WT0 > <BLC40> is not found.
+G4WT0 > <BRC41> is not found.
+G4WT0 > <BLC41> is not found.
+G4WT0 > <BRC42> is not found.
+G4WT0 > <BLC42> is not found.
+G4WT0 > <BRC43> is not found.
+G4WT0 > <BLC43> is not found.
+G4WT0 > <BRC44> is not found.
+G4WT0 > <BLC44> is not found.
+G4WT0 > <BRC45> is not found.
+G4WT0 > <BLC45> is not found.
+G4WT0 > <BRC46> is not found.
+G4WT0 > <BLC46> is not found.
+G4WT0 > <BRC47> is not found.
+G4WT0 > <BLC47> is not found.
+G4WT0 > <BRC48> is not found.
+G4WT0 > <BLC48> is not found.
+G4WT0 > <BRC49> is not found.
+G4WT0 > <BLC49> is not found.
+G4WT0 > <BRC50> is not found.
+G4WT0 > <BLC50> is not found.
+G4WT0 > <BRC51> is not found.
+G4WT0 > <BLC51> is not found.
+G4WT0 > <ERC0> is not found.
+G4WT0 > <ELC0> is not found.
+G4WT0 > <ERC1> is not found.
+G4WT0 > <ELC1> is not found.
+G4WT0 > <ERC2> is not found.
+G4WT0 > <ELC2> is not found.
+G4WT0 > <ERC3> is not found.
+G4WT0 > <ELC3> is not found.
+G4WT0 > <ERC4> is not found.
+G4WT0 > <ELC4> is not found.
+G4WT0 > <ERC5> is not found.
+G4WT0 > <ELC5> is not found.
+G4WT0 > <ERC6> is not found.
+G4WT0 > <ELC6> is not found.
+G4WT0 > <ERC7> is not found.
+G4WT0 > <ELC7> is not found.
+G4WT0 > <ERC8> is not found.
+G4WT0 > <ELC8> is not found.
+G4WT0 > <ERC9> is not found.
+G4WT0 > <ELC9> is not found.
+G4WT0 > <ERC10> is not found.
+G4WT0 > <ELC10> is not found.
+G4WT0 > <ERC11> is not found.
+G4WT0 > <ELC11> is not found.
+G4WT0 > <ERC12> is not found.
+G4WT0 > <ELC12> is not found.
+G4WT0 > <ERC13> is not found.
+G4WT0 > <ELC13> is not found.
+G4WT0 > <ERC14> is not found.
+G4WT0 > <ELC14> is not found.
+G4WT0 > <ERC15> is not found.
+G4WT0 > <ELC15> is not found.
+G4WT0 > <ERC16> is not found.
+G4WT0 > <ELC16> is not found.
+G4WT0 > <ERC17> is not found.
+G4WT0 > <ELC17> is not found.
+G4WT0 > <ERC18> is not found.
+G4WT0 > <ELC18> is not found.
+G4WT0 > <ERC19> is not found.
+G4WT0 > <ELC19> is not found.
+G4WT0 > <ERC20> is not found.
+G4WT0 > <ELC20> is not found.
+G4WT0 > <ERC21> is not found.
+G4WT0 > <ELC21> is not found.
+G4WT0 > <ERC22> is not found.
+G4WT0 > <ELC22> is not found.
+G4WT0 > <ERC23> is not found.
+G4WT0 > <ELC23> is not found.
+G4WT0 > <ERC24> is not found.
+G4WT0 > <ELC24> is not found.
+G4WT0 > <ERC25> is not found.
+G4WT0 > <ELC25> is not found.
+G4WT0 > <ERC26> is not found.
+G4WT0 > <ELC26> is not found.
+G4WT0 > <ERC27> is not found.
+G4WT0 > <ELC27> is not found.
+G4WT0 > <ERC28> is not found.
+G4WT0 > <ELC28> is not found.
+G4WT0 > <ERC29> is not found.
+G4WT0 > <ELC29> is not found.
+G4WT0 > <ERC30> is not found.
+G4WT0 > <ELC30> is not found.
+G4WT0 > <ERC31> is not found.
+G4WT0 > <ELC31> is not found.
+G4WT0 > <ERC32> is not found.
+G4WT0 > <ELC32> is not found.
+G4WT0 > <ERC33> is not found.
+G4WT0 > <ELC33> is not found.
+G4WT0 > <ERC34> is not found.
+G4WT0 > <ELC34> is not found.
+G4WT0 > <ERC35> is not found.
+G4WT0 > <ELC35> is not found.
+G4WT0 > <ERC36> is not found.
+G4WT0 > <ELC36> is not found.
+G4WT0 > <ERC37> is not found.
+G4WT0 > <ELC37> is not found.
+G4WT0 > <ERC38> is not found.
+G4WT0 > <ELC38> is not found.
+G4WT0 > <ERC39> is not found.
+G4WT0 > <ELC39> is not found.
+G4WT0 > Thread-local run terminated.
+G4WT0 > Run Summary
+G4WT0 >   Number of events processed : 1
+G4WT0 >   User=0.020000s Real=0.043285s Sys=0.020000s [Cpu=92.4%]
+G4WT0 > /DRsim/action/useCalib False
+G4WT0 > /DRsim/generator/randx 0
+G4WT0 > /DRsim/generator/randy 0
+G4WT0 > /DRsim/generator/theta -0.95076999
+G4WT0 > /DRsim/generator/phi 0
+G4WT0 > /DRsim/generator/y0 0
+G4WT0 > /DRsim/generator/z0 0
+G4WT0 > /gun/particle e-
+G4WT0 > /gun/energy 1 eV
+G4WT0 > ### Run 2 starts on worker thread 0.
+G4WT0 > --> Event 0 starts with initial seeds (16806280,34307262).
+G4WT0 > <BRC0> is not found.
+G4WT0 > <BLC0> is not found.
+G4WT0 > <BRC1> is not found.
+G4WT0 > <BLC1> is not found.
+G4WT0 > <BRC2> is not found.
+G4WT0 > <BLC2> is not found.
+G4WT0 > <BRC3> is not found.
+G4WT0 > <BLC3> is not found.
+G4WT0 > <BRC4> is not found.
+G4WT0 > <BLC4> is not found.
+G4WT0 > <BRC5> is not found.
+G4WT0 > <BLC5> is not found.
+G4WT0 > <BRC6> is not found.
+G4WT0 > <BLC6> is not found.
+G4WT0 > <BRC7> is not found.
+G4WT0 > <BLC7> is not found.
+G4WT0 > <BRC8> is not found.
+G4WT0 > <BLC8> is not found.
+G4WT0 > <BRC9> is not found.
+G4WT0 > <BLC9> is not found.
+G4WT0 > <BRC10> is not found.
+G4WT0 > <BLC10> is not found.
+G4WT0 > <BRC11> is not found.
+G4WT0 > <BLC11> is not found.
+G4WT0 > <BRC12> is not found.
+G4WT0 > <BLC12> is not found.
+G4WT0 > <BRC13> is not found.
+G4WT0 > <BLC13> is not found.
+G4WT0 > <BRC14> is not found.
+G4WT0 > <BLC14> is not found.
+G4WT0 > <BRC15> is not found.
+G4WT0 > <BLC15> is not found.
+G4WT0 > <BRC16> is not found.
+G4WT0 > <BLC16> is not found.
+G4WT0 > <BRC17> is not found.
+G4WT0 > <BLC17> is not found.
+G4WT0 > <BRC18> is not found.
+G4WT0 > <BLC18> is not found.
+G4WT0 > <BRC19> is not found.
+G4WT0 > <BLC19> is not found.
+G4WT0 > <BRC20> is not found.
+G4WT0 > <BLC20> is not found.
+G4WT0 > <BRC21> is not found.
+G4WT0 > <BLC21> is not found.
+G4WT0 > <BRC22> is not found.
+G4WT0 > <BLC22> is not found.
+G4WT0 > <BRC23> is not found.
+G4WT0 > <BLC23> is not found.
+G4WT0 > <BRC24> is not found.
+G4WT0 > <BLC24> is not found.
+G4WT0 > <BRC25> is not found.
+G4WT0 > <BLC25> is not found.
+G4WT0 > <BRC26> is not found.
+G4WT0 > <BLC26> is not found.
+G4WT0 > <BRC27> is not found.
+G4WT0 > <BLC27> is not found.
+G4WT0 > <BRC28> is not found.
+G4WT0 > <BLC28> is not found.
+G4WT0 > <BRC29> is not found.
+G4WT0 > <BLC29> is not found.
+G4WT0 > <BRC30> is not found.
+G4WT0 > <BLC30> is not found.
+G4WT0 > <BRC31> is not found.
+G4WT0 > <BLC31> is not found.
+G4WT0 > <BRC32> is not found.
+G4WT0 > <BLC32> is not found.
+G4WT0 > <BRC33> is not found.
+G4WT0 > <BLC33> is not found.
+G4WT0 > <BRC34> is not found.
+G4WT0 > <BLC34> is not found.
+G4WT0 > <BRC35> is not found.
+G4WT0 > <BLC35> is not found.
+G4WT0 > <BRC36> is not found.
+G4WT0 > <BLC36> is not found.
+G4WT0 > <BRC37> is not found.
+G4WT0 > <BLC37> is not found.
+G4WT0 > <BRC38> is not found.
+G4WT0 > <BLC38> is not found.
+G4WT0 > <BRC39> is not found.
+G4WT0 > <BLC39> is not found.
+G4WT0 > <BRC40> is not found.
+G4WT0 > <BLC40> is not found.
+G4WT0 > <BRC41> is not found.
+G4WT0 > <BLC41> is not found.
+G4WT0 > <BRC42> is not found.
+G4WT0 > <BLC42> is not found.
+G4WT0 > <BRC43> is not found.
+G4WT0 > <BLC43> is not found.
+G4WT0 > <BRC44> is not found.
+G4WT0 > <BLC44> is not found.
+G4WT0 > <BRC45> is not found.
+G4WT0 > <BLC45> is not found.
+G4WT0 > <BRC46> is not found.
+G4WT0 > <BLC46> is not found.
+G4WT0 > <BRC47> is not found.
+G4WT0 > <BLC47> is not found.
+G4WT0 > <BRC48> is not found.
+G4WT0 > <BLC48> is not found.
+G4WT0 > <BRC49> is not found.
+G4WT0 > <BLC49> is not found.
+G4WT0 > <BRC50> is not found.
+G4WT0 > <BLC50> is not found.
+G4WT0 > <BRC51> is not found.
+G4WT0 > <BLC51> is not found.
+G4WT0 > <ERC0> is not found.
+G4WT0 > <ELC0> is not found.
+G4WT0 > <ERC1> is not found.
+G4WT0 > <ELC1> is not found.
+G4WT0 > <ERC2> is not found.
+G4WT0 > <ELC2> is not found.
+G4WT0 > <ERC3> is not found.
+G4WT0 > <ELC3> is not found.
+G4WT0 > <ERC4> is not found.
+G4WT0 > <ELC4> is not found.
+G4WT0 > <ERC5> is not found.
+G4WT0 > <ELC5> is not found.
+G4WT0 > <ERC6> is not found.
+G4WT0 > <ELC6> is not found.
+G4WT0 > <ERC7> is not found.
+G4WT0 > <ELC7> is not found.
+G4WT0 > <ERC8> is not found.
+G4WT0 > <ELC8> is not found.
+G4WT0 > <ERC9> is not found.
+G4WT0 > <ELC9> is not found.
+G4WT0 > <ERC10> is not found.
+G4WT0 > <ELC10> is not found.
+G4WT0 > <ERC11> is not found.
+G4WT0 > <ELC11> is not found.
+G4WT0 > <ERC12> is not found.
+G4WT0 > <ELC12> is not found.
+G4WT0 > <ERC13> is not found.
+G4WT0 > <ELC13> is not found.
+G4WT0 > <ERC14> is not found.
+G4WT0 > <ELC14> is not found.
+G4WT0 > <ERC15> is not found.
+G4WT0 > <ELC15> is not found.
+G4WT0 > <ERC16> is not found.
+G4WT0 > <ELC16> is not found.
+G4WT0 > <ERC17> is not found.
+G4WT0 > <ELC17> is not found.
+G4WT0 > <ERC18> is not found.
+G4WT0 > <ELC18> is not found.
+G4WT0 > <ERC19> is not found.
+G4WT0 > <ELC19> is not found.
+G4WT0 > <ERC20> is not found.
+G4WT0 > <ELC20> is not found.
+G4WT0 > <ERC21> is not found.
+G4WT0 > <ELC21> is not found.
+G4WT0 > <ERC22> is not found.
+G4WT0 > <ELC22> is not found.
+G4WT0 > <ERC23> is not found.
+G4WT0 > <ELC23> is not found.
+G4WT0 > <ERC24> is not found.
+G4WT0 > <ELC24> is not found.
+G4WT0 > <ERC25> is not found.
+G4WT0 > <ELC25> is not found.
+G4WT0 > <ERC26> is not found.
+G4WT0 > <ELC26> is not found.
+G4WT0 > <ERC27> is not found.
+G4WT0 > <ELC27> is not found.
+G4WT0 > <ERC28> is not found.
+G4WT0 > <ELC28> is not found.
+G4WT0 > <ERC29> is not found.
+G4WT0 > <ELC29> is not found.
+G4WT0 > <ERC30> is not found.
+G4WT0 > <ELC30> is not found.
+G4WT0 > <ERC31> is not found.
+G4WT0 > <ELC31> is not found.
+G4WT0 > <ERC32> is not found.
+G4WT0 > <ELC32> is not found.
+G4WT0 > <ERC33> is not found.
+G4WT0 > <ELC33> is not found.
+G4WT0 > <ERC34> is not found.
+G4WT0 > <ELC34> is not found.
+G4WT0 > <ERC35> is not found.
+G4WT0 > <ELC35> is not found.
+G4WT0 > <ERC36> is not found.
+G4WT0 > <ELC36> is not found.
+G4WT0 > <ERC37> is not found.
+G4WT0 > <ELC37> is not found.
+G4WT0 > <ERC38> is not found.
+G4WT0 > <ELC38> is not found.
+G4WT0 > <ERC39> is not found.
+G4WT0 > <ELC39> is not found.
+G4WT0 > Thread-local run terminated.
+G4WT0 > Run Summary
+G4WT0 >   Number of events processed : 1
+G4WT0 >   User=0.040000s Real=0.044916s Sys=0.000000s [Cpu=89.1%]
+Graphics systems deleted.
+Visualization Manager deleting...
+G4WT0 > Destroying WorkerRunManager (0x7fc8fc03e500)
+G4WT0 > G4 kernel has come to Quit state.
+G4WT0 > UserRunAction deleted.
+G4WT0 > UserPrimaryGenerator deleted.
+G4WT0 > RunManager is deleting RunManagerKernel.
+G4WT0 > G4SDManager deleted.
+G4WT0 > EventManager deleted.
+G4WT0 > Units table cleared.
+G4WT0 > TransportationManager deleted.
+G4WT0 > Total navigation history collections cleaned: 6
+G4WT0 > ================== Deleting memory pools ===================
+G4WT0 > Pool ID '20G4NavigationLevelRep', size : 0.00673 MB
+G4WT0 > Pool ID '24G4ReferenceCountedHandleIvE', size : 0.000961 MB
+G4WT0 > Pool ID '7G4Event', size : 0.000961 MB
+G4WT0 > Pool ID '15G4PrimaryVertex', size : 0.000961 MB
+G4WT0 > Pool ID '17G4PrimaryParticle', size : 0.000961 MB
+G4WT0 > Pool ID '15G4HCofThisEvent', size : 0.000961 MB
+G4WT0 > Pool ID '17G4DynamicParticle', size : 0.000961 MB
+G4WT0 > Pool ID '7G4Track', size : 0.000961 MB
+G4WT0 > Pool ID '18G4TouchableHistory', size : 0.000961 MB
+G4WT0 > Pool ID '15G4CountedObjectIvE', size : 0.000961 MB
+G4WT0 > Pool ID '18G4SmoothTrajectory', size : 0.000961 MB
+G4WT0 > Pool ID '23G4SmoothTrajectoryPoint', size : 0.000961 MB
+G4WT0 > Pool ID '21G4TrajectoryContainer', size : 0.000961 MB
+G4WT0 > Number of memory pools allocated: 13; of which, static: 0
+G4WT0 > Dynamic pools deleted: 13 / Total memory freed: 0.018 MB
+G4WT0 > ============================================================
+G4WT0 > G4Allocator objects are deleted.
+G4WT0 > Thread-local UImanager is to be deleted.
+G4WT0 > There should not be any thread-local G4cout/G4cerr hereafter.
+G4 kernel has come to Quit state.
+UserDetectorConstruction deleted.
+UserPhysicsList deleted.
+UserActionInitialization deleted.
+UserWorkerThreadInitialization deleted.
+UserRunAction deleted.
+RunManager is deleting RunManagerKernel.
+G4SDManager deleted.
+EventManager deleted.
+Units table cleared.
+TransportationManager deleted.
+Total navigation history collections cleaned: 3
+G4RNGHelper object is deleted.
+================== Deleting memory pools ===================
+Pool ID '20G4NavigationLevelRep', size : 0.00288 MB
+Pool ID '24G4ReferenceCountedHandleIvE', size : 0.000961 MB
+Pool ID '17G4DynamicParticle', size : 0.000961 MB
+Pool ID '15G4CountedObjectIvE', size : 0.000961 MB
+Number of memory pools allocated: 4; of which, static: 0
+Dynamic pools deleted: 4 / Total memory freed: 0.0058 MB
+============================================================
+G4Allocator objects are deleted.
+UImanager deleted.
+StateManager deleted.
+RunManagerKernel is deleted. Good bye :)

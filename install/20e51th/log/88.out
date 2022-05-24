@@ -1,0 +1,1379 @@
+Setting up the environment for Geant4 10.5.p01 for use with CMake
+
+**************************************************************
+ Geant4 version Name: geant4-10-05-patch-01 [MT]   (17-April-2019)
+  << in Multi-threaded mode >> 
+                       Copyright : Geant4 Collaboration
+                      References : NIM A 506 (2003), 250-303
+                                 : IEEE-TNS 53 (2006), 270-278
+                                 : NIM A 835 (2016), 186-225
+                             WWW : http://geant4.org/
+**************************************************************
+
+<<< Geant4 Physics List simulation engine: FTFP_BERT 2.0
+
+Visualization Manager instantiating with verbosity "warnings (3)"...
+Visualization Manager initialising...
+Registering graphics systems...
+
+You have successfully registered the following graphics systems.
+Current available graphics systems are:
+ASCIITree (ATree)
+DAWNFILE (DAWNFILE)
+G4HepRep (HepRepXML)
+G4HepRepFile (HepRepFile)
+RayTracer (RayTracer)
+VRML1FILE (VRML1FILE)
+VRML2FILE (VRML2FILE)
+gMocrenFile (gMocrenFile)
+OpenGLImmediateQt (OGLIQt, OGLI)
+OpenGLStoredQt (OGLSQt, OGL, OGLS)
+OpenGLImmediateXm (OGLIXm, OGLIQt_FALLBACK)
+OpenGLStoredXm (OGLSXm, OGLSQt_FALLBACK)
+OpenGLImmediateX (OGLIX, OGLIQt_FALLBACK, OGLIXm_FALLBACK)
+OpenGLStoredX (OGLSX, OGLSQt_FALLBACK, OGLSXm_FALLBACK)
+RayTracerX (RayTracerX)
+
+Registering model factories...
+
+You have successfully registered the following model factories.
+Registered model factories:
+  generic
+  drawByAttribute
+  drawByCharge
+  drawByOriginVolume
+  drawByParticleID
+  drawByEncounteredVolume
+
+Registered filter factories:
+  attributeFilter
+  chargeFilter
+  originVolumeFilter
+  particleFilter
+  encounteredVolumeFilter
+
+You have successfully registered the following user vis actions.
+Run Duration User Vis Actions: none
+End of Event User Vis Actions: none
+End of Run User Vis Actions: none
+
+Some /vis commands (optionally) take a string to specify colour.
+"/vis/list" to see available colours.
+0>> x : 3050.15, y : 0, z : 33.8885 center_distance : 3050.33
+0>> x : 3050.15 y : 0 z : 33.8885 center_distance : 3050.33
+1>> x : 3049.97, y : 0, z : 101.663 center_distance : 3051.67
+1>> x : 3049.97 y : 0 z : 101.663 center_distance : 3051.67
+2>> x : 3049.18, y : 0, z : 169.419 center_distance : 3053.89
+2>> x : 3049.18 y : 0 z : 169.419 center_distance : 3053.89
+3>> x : 3047.78, y : 0, z : 237.168 center_distance : 3057
+3>> x : 3047.78 y : 0 z : 237.168 center_distance : 3057
+4>> x : 3045.78, y : 0, z : 304.905 center_distance : 3061
+4>> x : 3045.78 y : 0 z : 304.905 center_distance : 3061
+5>> x : 3043.17, y : 0, z : 372.609 center_distance : 3065.89
+5>> x : 3043.17 y : 0 z : 372.609 center_distance : 3065.89
+6>> x : 3039.96, y : 0, z : 440.278 center_distance : 3071.68
+6>> x : 3039.96 y : 0 z : 440.278 center_distance : 3071.68
+7>> x : 3036.17, y : 0, z : 507.905 center_distance : 3078.36
+7>> x : 3036.17 y : 0 z : 507.905 center_distance : 3078.36
+8>> x : 3031.8, y : 0, z : 575.487 center_distance : 3085.94
+8>> x : 3031.8 y : 0 z : 575.487 center_distance : 3085.94
+9>> x : 3026.87, y : 0, z : 643.019 center_distance : 3094.42
+9>> x : 3026.87 y : 0 z : 643.019 center_distance : 3094.42
+10>> x : 3021.39, y : 0, z : 710.498 center_distance : 3103.8
+10>> x : 3021.39 y : 0 z : 710.498 center_distance : 3103.8
+11>> x : 3015.37, y : 0, z : 777.92 center_distance : 3114.1
+11>> x : 3015.37 y : 0 z : 777.92 center_distance : 3114.1
+12>> x : 3008.82, y : 0, z : 845.282 center_distance : 3125.3
+12>> x : 3008.82 y : 0 z : 845.282 center_distance : 3125.3
+13>> x : 3001.77, y : 0, z : 912.579 center_distance : 3137.42
+13>> x : 3001.77 y : 0 z : 912.579 center_distance : 3137.42
+14>> x : 2994.23, y : 0, z : 979.827 center_distance : 3150.47
+14>> x : 2994.23 y : 0 z : 979.827 center_distance : 3150.47
+15>> x : 2986.21, y : 0, z : 1047.02 center_distance : 3164.44
+15>> x : 2986.21 y : 0 z : 1047.02 center_distance : 3164.44
+16>> x : 2977.74, y : 0, z : 1114.16 center_distance : 3179.35
+16>> x : 2977.74 y : 0 z : 1114.16 center_distance : 3179.35
+17>> x : 2968.83, y : 0, z : 1181.25 center_distance : 3195.2
+17>> x : 2968.83 y : 0 z : 1181.25 center_distance : 3195.2
+18>> x : 2959.51, y : 0, z : 1248.31 center_distance : 3212.01
+18>> x : 2959.51 y : 0 z : 1248.31 center_distance : 3212.01
+19>> x : 2949.78, y : 0, z : 1315.35 center_distance : 3229.76
+19>> x : 2949.78 y : 0 z : 1315.35 center_distance : 3229.76
+20>> x : 2939.69, y : 0, z : 1382.37 center_distance : 3248.49
+20>> x : 2939.69 y : 0 z : 1382.37 center_distance : 3248.49
+21>> x : 2929.22, y : 0, z : 1449.38 center_distance : 3268.19
+21>> x : 2929.22 y : 0 z : 1449.38 center_distance : 3268.19
+22>> x : 2918.43, y : 0, z : 1516.4 center_distance : 3288.87
+22>> x : 2918.43 y : 0 z : 1516.4 center_distance : 3288.87
+23>> x : 2907.31, y : 0, z : 1583.42 center_distance : 3310.54
+23>> x : 2907.31 y : 0 z : 1583.42 center_distance : 3310.54
+24>> x : 2895.9, y : 0, z : 1650.48 center_distance : 3333.22
+24>> x : 2895.9 y : 0 z : 1650.48 center_distance : 3333.22
+25>> x : 2884.22, y : 0, z : 1717.58 center_distance : 3356.9
+25>> x : 2884.22 y : 0 z : 1717.58 center_distance : 3356.9
+26>> x : 2872.28, y : 0, z : 1784.73 center_distance : 3381.61
+26>> x : 2872.28 y : 0 z : 1784.73 center_distance : 3381.61
+27>> x : 2860.11, y : 0, z : 1851.98 center_distance : 3407.36
+27>> x : 2860.11 y : 0 z : 1851.98 center_distance : 3407.36
+28>> x : 2847.72, y : 0, z : 1919.33 center_distance : 3434.15
+28>> x : 2847.72 y : 0 z : 1919.33 center_distance : 3434.15
+29>> x : 2835.14, y : 0, z : 1986.81 center_distance : 3462
+29>> x : 2835.14 y : 0 z : 1986.81 center_distance : 3462
+30>> x : 2822.38, y : 0, z : 2054.45 center_distance : 3490.93
+30>> x : 2822.38 y : 0 z : 2054.45 center_distance : 3490.93
+31>> x : 2809.46, y : 0, z : 2122.26 center_distance : 3520.95
+31>> x : 2809.46 y : 0 z : 2122.26 center_distance : 3520.95
+32>> x : 2796.41, y : 0, z : 2190.27 center_distance : 3552.07
+32>> x : 2796.41 y : 0 z : 2190.27 center_distance : 3552.07
+33>> x : 2783.23, y : 0, z : 2258.53 center_distance : 3584.32
+33>> x : 2783.23 y : 0 z : 2258.53 center_distance : 3584.32
+34>> x : 2769.95, y : 0, z : 2327.02 center_distance : 3617.68
+34>> x : 2769.95 y : 0 z : 2327.02 center_distance : 3617.68
+35>> x : 2756.59, y : 0, z : 2395.78 center_distance : 3652.2
+35>> x : 2756.59 y : 0 z : 2395.78 center_distance : 3652.2
+36>> x : 2743.16, y : 0, z : 2464.87 center_distance : 3687.88
+36>> x : 2743.16 y : 0 z : 2464.87 center_distance : 3687.88
+37>> x : 2729.66, y : 0, z : 2534.29 center_distance : 3724.74
+37>> x : 2729.66 y : 0 z : 2534.29 center_distance : 3724.74
+38>> x : 2716.14, y : 0, z : 2604.09 center_distance : 3762.81
+38>> x : 2716.14 y : 0 z : 2604.09 center_distance : 3762.81
+39>> x : 2702.59, y : 0, z : 2674.29 center_distance : 3802.08
+39>> x : 2702.59 y : 0 z : 2674.29 center_distance : 3802.08
+40>> x : 2689.03, y : 0, z : 2744.93 center_distance : 3842.6
+40>> x : 2689.03 y : 0 z : 2744.93 center_distance : 3842.6
+41>> x : 2675.47, y : 0, z : 2816.04 center_distance : 3884.36
+41>> x : 2675.47 y : 0 z : 2816.04 center_distance : 3884.36
+42>> x : 2661.94, y : 0, z : 2887.66 center_distance : 3927.4
+42>> x : 2661.94 y : 0 z : 2887.66 center_distance : 3927.4
+43>> x : 2648.43, y : 0, z : 2959.85 center_distance : 3971.76
+43>> x : 2648.43 y : 0 z : 2959.85 center_distance : 3971.76
+44>> x : 2634.95, y : 0, z : 3032.59 center_distance : 4017.41
+44>> x : 2634.95 y : 0 z : 3032.59 center_distance : 4017.41
+45>> x : 2621.53, y : 0, z : 3105.95 center_distance : 4064.4
+45>> x : 2621.53 y : 0 z : 3105.95 center_distance : 4064.4
+46>> x : 2608.17, y : 0, z : 3179.96 center_distance : 4112.75
+46>> x : 2608.17 y : 0 z : 3179.96 center_distance : 4112.75
+47>> x : 2594.88, y : 0, z : 3254.66 center_distance : 4162.48
+47>> x : 2594.88 y : 0 z : 3254.66 center_distance : 4162.48
+48>> x : 2581.68, y : 0, z : 3330.12 center_distance : 4213.64
+48>> x : 2581.68 y : 0 z : 3330.12 center_distance : 4213.64
+49>> x : 2568.55, y : 0, z : 3406.35 center_distance : 4266.23
+49>> x : 2568.55 y : 0 z : 3406.35 center_distance : 4266.23
+50>> x : 2555.53, y : 0, z : 3483.4 center_distance : 4320.28
+50>> x : 2555.53 y : 0 z : 3483.4 center_distance : 4320.28
+51>> x : 2542.6, y : 0, z : 3561.32 center_distance : 4375.83
+51>> x : 2542.6 y : 0 z : 3561.32 center_distance : 4375.83
+-------------------------------------endcap-----------------------------------------
+0>> x : 2496.81, y : 0, z : 3593.58 center_distance : 4375.83
+0>> x : 2496.81 y : 0 z : 3593.58 center_distance : 4375.83
+-------------------------------------endcap-----------------------------------------
+1>> x : 2450.61, y : 0, z : 3625.24 center_distance : 4375.83
+1>> x : 2450.61 y : 0 z : 3625.24 center_distance : 4375.83
+-------------------------------------endcap-----------------------------------------
+2>> x : 2404.01, y : 0, z : 3656.31 center_distance : 4375.83
+2>> x : 2404.01 y : 0 z : 3656.31 center_distance : 4375.83
+-------------------------------------endcap-----------------------------------------
+3>> x : 2357.01, y : 0, z : 3686.78 center_distance : 4375.83
+3>> x : 2357.01 y : 0 z : 3686.78 center_distance : 4375.83
+-------------------------------------endcap-----------------------------------------
+4>> x : 2309.63, y : 0, z : 3716.65 center_distance : 4375.83
+4>> x : 2309.63 y : 0 z : 3716.65 center_distance : 4375.83
+-------------------------------------endcap-----------------------------------------
+5>> x : 2261.87, y : 0, z : 3745.91 center_distance : 4375.83
+5>> x : 2261.87 y : 0 z : 3745.91 center_distance : 4375.83
+-------------------------------------endcap-----------------------------------------
+6>> x : 2213.74, y : 0, z : 3774.55 center_distance : 4375.83
+6>> x : 2213.74 y : 0 z : 3774.55 center_distance : 4375.83
+-------------------------------------endcap-----------------------------------------
+7>> x : 2165.24, y : 0, z : 3802.58 center_distance : 4375.83
+7>> x : 2165.24 y : 0 z : 3802.58 center_distance : 4375.83
+-------------------------------------endcap-----------------------------------------
+8>> x : 2116.39, y : 0, z : 3829.98 center_distance : 4375.83
+8>> x : 2116.39 y : 0 z : 3829.98 center_distance : 4375.83
+-------------------------------------endcap-----------------------------------------
+9>> x : 2067.2, y : 0, z : 3856.76 center_distance : 4375.83
+9>> x : 2067.2 y : 0 z : 3856.76 center_distance : 4375.83
+-------------------------------------endcap-----------------------------------------
+10>> x : 2017.66, y : 0, z : 3882.9 center_distance : 4375.83
+10>> x : 2017.66 y : 0 z : 3882.9 center_distance : 4375.83
+-------------------------------------endcap-----------------------------------------
+11>> x : 1967.8, y : 0, z : 3908.41 center_distance : 4375.83
+11>> x : 1967.8 y : 0 z : 3908.41 center_distance : 4375.83
+-------------------------------------endcap-----------------------------------------
+12>> x : 1917.61, y : 0, z : 3933.28 center_distance : 4375.83
+12>> x : 1917.61 y : 0 z : 3933.28 center_distance : 4375.83
+-------------------------------------endcap-----------------------------------------
+13>> x : 1867.11, y : 0, z : 3957.5 center_distance : 4375.83
+13>> x : 1867.11 y : 0 z : 3957.5 center_distance : 4375.83
+-------------------------------------endcap-----------------------------------------
+14>> x : 1816.3, y : 0, z : 3981.07 center_distance : 4375.83
+14>> x : 1816.3 y : 0 z : 3981.07 center_distance : 4375.83
+-------------------------------------endcap-----------------------------------------
+15>> x : 1765.2, y : 0, z : 4003.99 center_distance : 4375.83
+15>> x : 1765.2 y : 0 z : 4003.99 center_distance : 4375.83
+-------------------------------------endcap-----------------------------------------
+16>> x : 1713.8, y : 0, z : 4026.26 center_distance : 4375.83
+16>> x : 1713.8 y : 0 z : 4026.26 center_distance : 4375.83
+-------------------------------------endcap-----------------------------------------
+17>> x : 1662.13, y : 0, z : 4047.87 center_distance : 4375.83
+17>> x : 1662.13 y : 0 z : 4047.87 center_distance : 4375.83
+-------------------------------------endcap-----------------------------------------
+18>> x : 1610.18, y : 0, z : 4068.81 center_distance : 4375.83
+18>> x : 1610.18 y : 0 z : 4068.81 center_distance : 4375.83
+-------------------------------------endcap-----------------------------------------
+19>> x : 1557.97, y : 0, z : 4089.09 center_distance : 4375.83
+19>> x : 1557.97 y : 0 z : 4089.09 center_distance : 4375.83
+-------------------------------------endcap-----------------------------------------
+20>> x : 1505.5, y : 0, z : 4108.69 center_distance : 4375.83
+20>> x : 1505.5 y : 0 z : 4108.69 center_distance : 4375.83
+-------------------------------------endcap-----------------------------------------
+21>> x : 1452.79, y : 0, z : 4127.63 center_distance : 4375.83
+21>> x : 1452.79 y : 0 z : 4127.63 center_distance : 4375.83
+-------------------------------------endcap-----------------------------------------
+22>> x : 1399.84, y : 0, z : 4145.88 center_distance : 4375.83
+22>> x : 1399.84 y : 0 z : 4145.88 center_distance : 4375.83
+-------------------------------------endcap-----------------------------------------
+23>> x : 1346.66, y : 0, z : 4163.46 center_distance : 4375.83
+23>> x : 1346.66 y : 0 z : 4163.46 center_distance : 4375.83
+-------------------------------------endcap-----------------------------------------
+24>> x : 1293.26, y : 0, z : 4180.36 center_distance : 4375.83
+24>> x : 1293.26 y : 0 z : 4180.36 center_distance : 4375.83
+-------------------------------------endcap-----------------------------------------
+25>> x : 1239.64, y : 0, z : 4196.57 center_distance : 4375.83
+25>> x : 1239.64 y : 0 z : 4196.57 center_distance : 4375.83
+-------------------------------------endcap-----------------------------------------
+26>> x : 1185.83, y : 0, z : 4212.09 center_distance : 4375.83
+26>> x : 1185.83 y : 0 z : 4212.09 center_distance : 4375.83
+-------------------------------------endcap-----------------------------------------
+27>> x : 1131.82, y : 0, z : 4226.92 center_distance : 4375.83
+27>> x : 1131.82 y : 0 z : 4226.92 center_distance : 4375.83
+-------------------------------------endcap-----------------------------------------
+28>> x : 1077.62, y : 0, z : 4241.06 center_distance : 4375.83
+28>> x : 1077.62 y : 0 z : 4241.06 center_distance : 4375.83
+-------------------------------------endcap-----------------------------------------
+29>> x : 1023.25, y : 0, z : 4254.51 center_distance : 4375.83
+29>> x : 1023.25 y : 0 z : 4254.51 center_distance : 4375.83
+-------------------------------------endcap-----------------------------------------
+30>> x : 968.709, y : 0, z : 4267.26 center_distance : 4375.83
+30>> x : 968.709 y : 0 z : 4267.26 center_distance : 4375.83
+-------------------------------------endcap-----------------------------------------
+31>> x : 914.009, y : 0, z : 4279.31 center_distance : 4375.83
+31>> x : 914.009 y : 0 z : 4279.31 center_distance : 4375.83
+-------------------------------------endcap-----------------------------------------
+32>> x : 859.161, y : 0, z : 4290.66 center_distance : 4375.83
+32>> x : 859.161 y : 0 z : 4290.66 center_distance : 4375.83
+-------------------------------------endcap-----------------------------------------
+33>> x : 804.172, y : 0, z : 4301.3 center_distance : 4375.83
+33>> x : 804.172 y : 0 z : 4301.3 center_distance : 4375.83
+-------------------------------------endcap-----------------------------------------
+34>> x : 749.051, y : 0, z : 4311.24 center_distance : 4375.83
+34>> x : 749.051 y : 0 z : 4311.24 center_distance : 4375.83
+-------------------------------------endcap-----------------------------------------
+35>> x : 693.807, y : 0, z : 4320.48 center_distance : 4375.83
+35>> x : 693.807 y : 0 z : 4320.48 center_distance : 4375.83
+-------------------------------------endcap-----------------------------------------
+36>> x : 638.449, y : 0, z : 4329 center_distance : 4375.83
+36>> x : 638.449 y : 0 z : 4329 center_distance : 4375.83
+-------------------------------------endcap-----------------------------------------
+37>> x : 582.987, y : 0, z : 4336.82 center_distance : 4375.83
+37>> x : 582.987 y : 0 z : 4336.82 center_distance : 4375.83
+-------------------------------------endcap-----------------------------------------
+38>> x : 527.43, y : 0, z : 4343.93 center_distance : 4375.83
+38>> x : 527.43 y : 0 z : 4343.93 center_distance : 4375.83
+-------------------------------------endcap-----------------------------------------
+39>> x : 471.786, y : 0, z : 4350.32 center_distance : 4375.83
+39>> x : 471.786 y : 0 z : 4350.32 center_distance : 4375.83
+
+ FTFP_BERT : new threshold between BERT and FTFP is over the interval 
+ for pions :   3 to 12 GeV
+ for kaons :   3 to 12 GeV
+ for proton :  3 to 12 GeV
+ for neutron : 3 to 12 GeV
+
+### Adding tracking cuts for neutron  TimeCut(ns)= 10000  KinEnergyCut(MeV)= 0
+### Birks coefficients used in run time
+   Polystyrene     0.126 mm/MeV     0.01323 g/cm^2/MeV  massFactor=  101.167 effCharge= 0.027027
+
+phot:  for gamma SubType=12 BuildTable=0
+      LambdaPrime table from 200 keV to 100 TeV in 61 bins 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+ LivermorePhElectric : Emin=    0 eV  Emax=  100 TeV  SauterGavrila Fluo
+
+compt:  for gamma SubType=13 BuildTable=1
+      Lambda table from 100 eV  to 1 MeV, 7 bins/decade, spline: 1
+      LambdaPrime table from 1 MeV to 100 TeV in 56 bins 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+       Klein-Nishina : Emin=    0 eV  Emax=  100 TeV
+
+conv:  for gamma SubType=14 BuildTable=1
+      Lambda table from 1.022 MeV to 100 TeV, 18 bins/decade, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        BetheHeitler : Emin=    0 eV  Emax=   80 GeV  ModifiedTsai
+     BetheHeitlerLPM : Emin=   80 GeV Emax=  100 TeV  ModifiedTsai
+
+Rayl:  for gamma SubType=11 BuildTable=1
+      Lambda table from 100 eV  to 100 keV, 7 bins/decade, spline: 0
+      LambdaPrime table from 100 keV to 100 TeV in 63 bins 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+   LivermoreRayleigh : Emin=    0 eV  Emax=  100 TeV  CullenGenerator
+
+msc:  for e-  SubType= 10
+      RangeFactor= 0.04, stepLimType: 1, latDisp: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            UrbanMsc : Emin=    0 eV  Emax=  100 MeV Nbins=42 100 eV  - 100 MeV
+        WentzelVIUni : Emin=  100 MeV Emax=  100 TeV Nbins=42 100 MeV - 100 TeV
+
+eIoni:  for e-  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      StepFunction=(0.2, 1 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        MollerBhabha : Emin=    0 eV  Emax=  100 TeV
+
+eBrem:  for e-  SubType=3
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      LPM flag: 1 for E > 1 GeV,  VertexHighEnergyTh(GeV)= 100000
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+             eBremSB : Emin=    0 eV  Emax=    1 GeV  ModifiedTsai
+            eBremLPM : Emin=    1 GeV Emax=  100 TeV  ModifiedTsai
+
+CoulombScat:  for e-, integral:1  SubType=1 BuildTable=1
+      Lambda table from 100 MeV to 100 TeV, 7 bins/decade, spline: 1
+      ThetaMin(p) < Theta(degree) < 180; pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering : Emin=  100 MeV Emax=  100 TeV
+
+msc:  for e+  SubType= 10
+      RangeFactor= 0.04, stepLimType: 1, latDisp: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            UrbanMsc : Emin=    0 eV  Emax=  100 MeV Nbins=42 100 eV  - 100 MeV
+        WentzelVIUni : Emin=  100 MeV Emax=  100 TeV Nbins=42 100 MeV - 100 TeV
+
+eIoni:  for e+  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      StepFunction=(0.2, 1 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        MollerBhabha : Emin=    0 eV  Emax=  100 TeV
+
+eBrem:  for e+  SubType=3
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      LPM flag: 1 for E > 1 GeV,  VertexHighEnergyTh(GeV)= 100000
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+             eBremSB : Emin=    0 eV  Emax=    1 GeV  ModifiedTsai
+            eBremLPM : Emin=    1 GeV Emax=  100 TeV  ModifiedTsai
+
+annihil:  for e+, integral:1  SubType=5 BuildTable=0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            eplus2gg : Emin=    0 eV  Emax=  100 TeV
+
+CoulombScat:  for e+, integral:1  SubType=1 BuildTable=1
+      Lambda table from 100 MeV to 100 TeV, 7 bins/decade, spline: 1
+      ThetaMin(p) < Theta(degree) < 180; pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering : Emin=  100 MeV Emax=  100 TeV
+
+msc:  for proton  SubType= 10
+      RangeFactor= 0.2, stepLimType: 0, latDisp: 0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni : Emin=    0 eV  Emax=  100 TeV Nbins=84 100 eV  - 100 TeV
+
+hIoni:  for proton  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      StepFunction=(0.2, 0.1 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               Bragg : Emin=    0 eV  Emax=    2 MeV
+          BetheBloch : Emin=    2 MeV Emax=  100 TeV
+
+hBrems:  for proton  SubType=3
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem : Emin=    0 eV  Emax=  100 TeV
+
+hPairProd:  for proton  SubType=4
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      Sampling table 17x1001; from 7.50618 GeV to 100 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd : Emin=    0 eV  Emax=  100 TeV
+
+CoulombScat:  for proton, integral:1  SubType=1 BuildTable=1
+      Lambda table from threshold  to 100 TeV, 7 bins/decade, spline: 1
+      ThetaMin(p) < Theta(degree) < 180; pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering : Emin=    0 eV  Emax=  100 TeV
+
+msc:  for GenericIon  SubType= 10
+      RangeFactor= 0.2, stepLimType: 0, latDisp: 0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            UrbanMsc : Emin=    0 eV  Emax=  100 TeV
+
+ionIoni:  for GenericIon  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      StepFunction=(0.2, 0.1 mm), integ: 1, fluct: 1, linLossLim= 0.02
+      Stopping Power data for 17 ion/material pairs
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            BraggIon : Emin=    0 eV  Emax=    2 MeV
+          BetheBloch : Emin=    2 MeV Emax=  100 TeV
+
+msc:  for alpha  SubType= 10
+      RangeFactor= 0.2, stepLimType: 0, latDisp: 0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            UrbanMsc : Emin=    0 eV  Emax=  100 TeV Nbins=84 100 eV  - 100 TeV
+
+ionIoni:  for alpha  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      StepFunction=(0.2, 0.1 mm), integ: 1, fluct: 1, linLossLim= 0.02
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            BraggIon : Emin=    0 eV  Emax=7.9452 MeV
+          BetheBloch : Emin=7.9452 MeV Emax=  100 TeV
+
+msc:  for anti_proton  SubType= 10
+      RangeFactor= 0.2, stepLimType: 0, latDisp: 0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni : Emin=    0 eV  Emax=  100 TeV Nbins=84 100 eV  - 100 TeV
+
+hIoni:  for anti_proton  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      StepFunction=(0.2, 0.1 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            ICRU73QO : Emin=    0 eV  Emax=    2 MeV
+          BetheBloch : Emin=    2 MeV Emax=  100 TeV
+
+hBrems:  for anti_proton  SubType=3
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem : Emin=    0 eV  Emax=  100 TeV
+
+hPairProd:  for anti_proton  SubType=4
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      Sampling table 17x1001; from 7.50618 GeV to 100 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd : Emin=    0 eV  Emax=  100 TeV
+
+CoulombScat:  for anti_proton, integral:1  SubType=1 BuildTable=1
+      Lambda table from threshold  to 100 TeV, 7 bins/decade, spline: 1
+      ThetaMin(p) < Theta(degree) < 180; pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering : Emin=    0 eV  Emax=  100 TeV
+
+msc:  for kaon+  SubType= 10
+      RangeFactor= 0.2, stepLimType: 0, latDisp: 0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni : Emin=    0 eV  Emax=  100 TeV Nbins=84 100 eV  - 100 TeV
+
+hIoni:  for kaon+  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      StepFunction=(0.2, 0.1 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               Bragg : Emin=    0 eV  Emax=1.05231 MeV
+          BetheBloch : Emin=1.05231 MeV Emax=  100 TeV
+
+hBrems:  for kaon+  SubType=3
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem : Emin=    0 eV  Emax=  100 TeV
+
+hPairProd:  for kaon+  SubType=4
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      Sampling table 18x1001; from 3.94942 GeV to 100 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd : Emin=    0 eV  Emax=  100 TeV
+
+CoulombScat:  for kaon+, integral:1  SubType=1 BuildTable=1
+      Lambda table from threshold  to 100 TeV, 7 bins/decade, spline: 1
+      ThetaMin(p) < Theta(degree) < 180; pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering : Emin=    0 eV  Emax=  100 TeV
+
+msc:  for kaon-  SubType= 10
+      RangeFactor= 0.2, stepLimType: 0, latDisp: 0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni : Emin=    0 eV  Emax=  100 TeV Nbins=84 100 eV  - 100 TeV
+
+hIoni:  for kaon-  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      StepFunction=(0.2, 0.1 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            ICRU73QO : Emin=    0 eV  Emax=1.05231 MeV
+          BetheBloch : Emin=1.05231 MeV Emax=  100 TeV
+
+hBrems:  for kaon-  SubType=3
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem : Emin=    0 eV  Emax=  100 TeV
+
+hPairProd:  for kaon-  SubType=4
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      Sampling table 18x1001; from 3.94942 GeV to 100 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd : Emin=    0 eV  Emax=  100 TeV
+
+CoulombScat:  for kaon-, integral:1  SubType=1 BuildTable=1
+      Used Lambda table of kaon+
+      ThetaMin(p) < Theta(degree) < 180; pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering : Emin=    0 eV  Emax=  100 TeV
+
+msc:  for mu+  SubType= 10
+      RangeFactor= 0.2, stepLimType: 0, latDisp: 0, polarAngLim(deg)= 180
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni : Emin=    0 eV  Emax=  100 TeV Nbins=84 100 eV  - 100 TeV
+
+muIoni:  for mu+  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      StepFunction=(0.2, 0.1 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               Bragg : Emin=    0 eV  Emax=  200 keV
+          BetheBloch : Emin=  200 keV Emax=    1 GeV
+        MuBetheBloch : Emin=    1 GeV Emax=  100 TeV
+
+muBrems:  for mu+  SubType=3
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+              MuBrem : Emin=    0 eV  Emax=  100 TeV
+
+muPairProd:  for mu+  SubType=4
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      Sampling table 21x1001; from 1 GeV to 100 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+          muPairProd : Emin=    0 eV  Emax=  100 TeV
+
+CoulombScat:  for mu+, integral:1  SubType=1 BuildTable=1
+      Lambda table from threshold  to 100 TeV, 7 bins/decade, spline: 1
+      ThetaMin(p) < Theta(degree) < 180; pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering : Emin=    0 eV  Emax=  100 TeV
+
+msc:  for mu-  SubType= 10
+      RangeFactor= 0.2, stepLimType: 0, latDisp: 0, polarAngLim(deg)= 180
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni : Emin=    0 eV  Emax=  100 TeV Nbins=84 100 eV  - 100 TeV
+
+muIoni:  for mu-  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      StepFunction=(0.2, 0.1 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            ICRU73QO : Emin=    0 eV  Emax=  200 keV
+          BetheBloch : Emin=  200 keV Emax=    1 GeV
+        MuBetheBloch : Emin=    1 GeV Emax=  100 TeV
+
+muBrems:  for mu-  SubType=3
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+              MuBrem : Emin=    0 eV  Emax=  100 TeV
+
+muPairProd:  for mu-  SubType=4
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      Sampling table 21x1001; from 1 GeV to 100 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+          muPairProd : Emin=    0 eV  Emax=  100 TeV
+
+CoulombScat:  for mu-, integral:1  SubType=1 BuildTable=1
+      Used Lambda table of mu+
+      ThetaMin(p) < Theta(degree) < 180; pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering : Emin=    0 eV  Emax=  100 TeV
+
+msc:  for pi+  SubType= 10
+      RangeFactor= 0.2, stepLimType: 0, latDisp: 0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni : Emin=    0 eV  Emax=  100 TeV Nbins=84 100 eV  - 100 TeV
+
+hIoni:  for pi+  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      StepFunction=(0.2, 0.1 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               Bragg : Emin=    0 eV  Emax=297.505 keV
+          BetheBloch : Emin=297.505 keV Emax=  100 TeV
+
+hBrems:  for pi+  SubType=3
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem : Emin=    0 eV  Emax=  100 TeV
+
+hPairProd:  for pi+  SubType=4
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      Sampling table 20x1001; from 1.11656 GeV to 100 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd : Emin=    0 eV  Emax=  100 TeV
+
+CoulombScat:  for pi+, integral:1  SubType=1 BuildTable=1
+      Lambda table from threshold  to 100 TeV, 7 bins/decade, spline: 1
+      ThetaMin(p) < Theta(degree) < 180; pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering : Emin=    0 eV  Emax=  100 TeV
+
+msc:  for pi-  SubType= 10
+      RangeFactor= 0.2, stepLimType: 0, latDisp: 0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni : Emin=    0 eV  Emax=  100 TeV Nbins=84 100 eV  - 100 TeV
+
+hIoni:  for pi-  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      StepFunction=(0.2, 0.1 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            ICRU73QO : Emin=    0 eV  Emax=297.505 keV
+          BetheBloch : Emin=297.505 keV Emax=  100 TeV
+
+hBrems:  for pi-  SubType=3
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem : Emin=    0 eV  Emax=  100 TeV
+
+hPairProd:  for pi-  SubType=4
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      Sampling table 20x1001; from 1.11656 GeV to 100 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd : Emin=    0 eV  Emax=  100 TeV
+
+CoulombScat:  for pi-, integral:1  SubType=1 BuildTable=1
+      Used Lambda table of pi+
+      ThetaMin(p) < Theta(degree) < 180; pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering : Emin=    0 eV  Emax=  100 TeV
+
+====================================================================
+                  HADRONIC PROCESSES SUMMARY (verbose level 1)
+
+---------------------------------------------------
+                           Hadronic Processes for neutron
+
+  Process: hadElastic
+        Model:             hElasticCHIPS: 0 eV  ---> 100 TeV
+     Cr_sctns:        G4NeutronElasticXS: 0 eV  ---> 100 TeV
+
+  Process: neutronInelastic
+        Model:                      FTFP: 3 GeV ---> 100 TeV
+        Model:            BertiniCascade: 0 eV  ---> 12 GeV
+     Cr_sctns:      G4NeutronInelasticXS: 0 eV  ---> 100 TeV
+
+  Process: nCapture
+        Model:               nRadCapture: 0 eV  ---> 100 TeV
+     Cr_sctns:        G4NeutronCaptureXS: 0 eV  ---> 100 TeV
+
+  Process: nKiller
+
+---------------------------------------------------
+                           Hadronic Processes for GenericIon
+
+  Process: ionInelastic
+        Model:  Binary Light Ion Cascade: 0 eV /n ---> 4 GeV/n
+        Model:                      FTFP: 2 GeV/n ---> 100 TeV/n
+     Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 100 TeV
+     Cr_sctns:          GheishaInelastic: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for He3
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 100 TeV
+     Cr_sctns:            GheishaElastic: 0 eV  ---> 100 TeV
+
+  Process: He3Inelastic
+        Model:  Binary Light Ion Cascade: 0 eV /n ---> 4 GeV/n
+        Model:                      FTFP: 2 GeV/n ---> 100 TeV/n
+     Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 100 TeV
+     Cr_sctns:          GheishaInelastic: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for alpha
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 100 TeV
+     Cr_sctns:            GheishaElastic: 0 eV  ---> 100 TeV
+
+  Process: alphaInelastic
+        Model:  Binary Light Ion Cascade: 0 eV /n ---> 4 GeV/n
+        Model:                      FTFP: 2 GeV/n ---> 100 TeV/n
+     Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 100 TeV
+     Cr_sctns:          GheishaInelastic: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for anti_He3
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100.1 MeV/n
+        Model:              AntiAElastic: 100 MeV/n ---> 100 TeV/n
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 100 TeV
+     Cr_sctns:            GheishaElastic: 0 eV  ---> 100 TeV
+
+  Process: anti_He3Inelastic
+        Model:                      FTFP: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 100 TeV
+     Cr_sctns:          GheishaInelastic: 0 eV  ---> 100 TeV
+
+  Process: hFritiofCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for anti_alpha
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100.1 MeV/n
+        Model:              AntiAElastic: 100 MeV/n ---> 100 TeV/n
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 100 TeV
+     Cr_sctns:            GheishaElastic: 0 eV  ---> 100 TeV
+
+  Process: anti_alphaInelastic
+        Model:                      FTFP: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 100 TeV
+     Cr_sctns:          GheishaInelastic: 0 eV  ---> 100 TeV
+
+  Process: hFritiofCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for anti_deuteron
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100.1 MeV/n
+        Model:              AntiAElastic: 100 MeV/n ---> 100 TeV/n
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 100 TeV
+     Cr_sctns:            GheishaElastic: 0 eV  ---> 100 TeV
+
+  Process: anti_deuteronInelastic
+        Model:                      FTFP: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 100 TeV
+     Cr_sctns:          GheishaInelastic: 0 eV  ---> 100 TeV
+
+  Process: hFritiofCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for anti_neutron
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100 TeV
+     Cr_sctns:            GheishaElastic: 0 eV  ---> 100 TeV
+
+  Process: anti_neutronInelastic
+        Model:                      FTFP: 0 eV  ---> 100 TeV
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 100 TeV
+     Cr_sctns:          GheishaInelastic: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for anti_proton
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100.1 MeV
+        Model:              AntiAElastic: 100 MeV ---> 100 TeV
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 100 TeV
+     Cr_sctns:            GheishaElastic: 0 eV  ---> 100 TeV
+
+  Process: anti_protonInelastic
+        Model:                      FTFP: 0 eV  ---> 100 TeV
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 100 TeV
+     Cr_sctns:          GheishaInelastic: 0 eV  ---> 100 TeV
+
+  Process: hFritiofCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for anti_triton
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100.1 MeV/n
+        Model:              AntiAElastic: 100 MeV/n ---> 100 TeV/n
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 100 TeV
+     Cr_sctns:            GheishaElastic: 0 eV  ---> 100 TeV
+
+  Process: anti_tritonInelastic
+        Model:                      FTFP: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 100 TeV
+     Cr_sctns:          GheishaInelastic: 0 eV  ---> 100 TeV
+
+  Process: hFritiofCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for deuteron
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 100 TeV
+     Cr_sctns:            GheishaElastic: 0 eV  ---> 100 TeV
+
+  Process: dInelastic
+        Model:  Binary Light Ion Cascade: 0 eV /n ---> 4 GeV/n
+        Model:                      FTFP: 2 GeV/n ---> 100 TeV/n
+     Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 100 TeV
+     Cr_sctns:          GheishaInelastic: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for e+
+
+  Process: positronNuclear
+        Model:   G4ElectroVDNuclearModel: 0 eV  ---> 1 PeV
+     Cr_sctns:          ElectroNuclearXS: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for e-
+
+  Process: electronNuclear
+        Model:   G4ElectroVDNuclearModel: 0 eV  ---> 1 PeV
+     Cr_sctns:          ElectroNuclearXS: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for gamma
+
+  Process: photonNuclear
+        Model:            BertiniCascade: 0 eV  ---> 3.5 GeV
+        Model:           TheoFSGenerator: 3 GeV ---> 100 TeV
+     Cr_sctns:            PhotoNuclearXS: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for kaon+
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100 TeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+     Cr_sctns:            GheishaElastic: 0 eV  ---> 100 TeV
+
+  Process: kaon+Inelastic
+        Model:                      FTFP: 3 GeV ---> 100 TeV
+        Model:            BertiniCascade: 0 eV  ---> 12 GeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+     Cr_sctns:  ChipsKaonPlusInelasticXS: 0 eV  ---> 100 TeV
+     Cr_sctns:          GheishaInelastic: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for kaon-
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100 TeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+     Cr_sctns:            GheishaElastic: 0 eV  ---> 100 TeV
+
+  Process: kaon-Inelastic
+        Model:                      FTFP: 3 GeV ---> 100 TeV
+        Model:            BertiniCascade: 0 eV  ---> 12 GeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+     Cr_sctns: ChipsKaonMinusInelasticXS: 0 eV  ---> 100 TeV
+     Cr_sctns:          GheishaInelastic: 0 eV  ---> 100 TeV
+
+  Process: hBertiniCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for lambda
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100 TeV
+     Cr_sctns:            GheishaElastic: 0 eV  ---> 100 TeV
+
+  Process: lambdaInelastic
+        Model:            BertiniCascade: 0 eV  ---> 6 GeV
+        Model:                      FTFP: 2 GeV ---> 100 TeV
+     Cr_sctns:   ChipsHyperonInelasticXS: 0 eV  ---> 100 TeV
+     Cr_sctns:          GheishaInelastic: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for mu+
+
+  Process: muonNuclear
+        Model:      G4MuonVDNuclearModel: 0 eV  ---> 1 PeV
+     Cr_sctns:     KokoulinMuonNuclearXS: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for mu-
+
+  Process: muonNuclear
+        Model:      G4MuonVDNuclearModel: 0 eV  ---> 1 PeV
+     Cr_sctns:     KokoulinMuonNuclearXS: 0 eV  ---> 100 TeV
+
+  Process: muMinusCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for pi+
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 1.0001 GeV
+        Model:           hElasticGlauber: 1 GeV ---> 100 TeV
+     Cr_sctns:       Barashenkov-Glauber: 0 eV  ---> 100 TeV
+
+  Process: pi+Inelastic
+        Model:                      FTFP: 3 GeV ---> 100 TeV
+        Model:            BertiniCascade: 0 eV  ---> 12 GeV
+     Cr_sctns: Barashenkov-Glauber-Gribov: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for pi-
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 1.0001 GeV
+        Model:           hElasticGlauber: 1 GeV ---> 100 TeV
+     Cr_sctns:       Barashenkov-Glauber: 0 eV  ---> 100 TeV
+
+  Process: pi-Inelastic
+        Model:                      FTFP: 3 GeV ---> 100 TeV
+        Model:            BertiniCascade: 0 eV  ---> 12 GeV
+     Cr_sctns: Barashenkov-Glauber-Gribov: 0 eV  ---> 100 TeV
+
+  Process: hBertiniCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for proton
+
+  Process: hadElastic
+        Model:             hElasticCHIPS: 0 eV  ---> 100 TeV
+     Cr_sctns:       Barashenkov-Glauber: 0 eV  ---> 100 TeV
+
+  Process: protonInelastic
+        Model:                      FTFP: 3 GeV ---> 100 TeV
+        Model:            BertiniCascade: 0 eV  ---> 12 GeV
+     Cr_sctns:       Barashenkov-Glauber: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for triton
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 100 TeV
+     Cr_sctns:            GheishaElastic: 0 eV  ---> 100 TeV
+
+  Process: tInelastic
+        Model:  Binary Light Ion Cascade: 0 eV /n ---> 4 GeV/n
+        Model:                      FTFP: 2 GeV/n ---> 100 TeV/n
+     Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 100 TeV
+     Cr_sctns:          GheishaInelastic: 0 eV  ---> 100 TeV
+
+================================================================
+
+========= Table of registered couples ==============================
+
+Index : 0     used in the geometry : Yes
+ Material : G4_Galactic
+ Range cuts        :  gamma  700 um     e-  700 um     e+  700 um  proton 700 um 
+ Energy thresholds :  gamma  990 eV     e-  990 eV     e+  990 eV  proton 70 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 1     used in the geometry : Yes
+ Material : Copper
+ Range cuts        :  gamma  700 um     e-  700 um     e+  700 um  proton 700 um 
+ Energy thresholds :  gamma  20.6438 keV    e-  1.03121 MeV    e+  977.24 keV proton 70 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+====================================================================
+
+### Run 0 starts.
+G4WT0 > ### Run 0 starts on worker thread 0.
+G4WT0 > --> Event 0 starts with initial seeds (38162549,39403393).
+G4WT0 > <BRC0> is not found.
+G4WT0 > <BLC0> is not found.
+G4WT0 > <BRC1> is not found.
+G4WT0 > <BLC1> is not found.
+G4WT0 > <BRC2> is not found.
+G4WT0 > <BLC2> is not found.
+G4WT0 > <BRC3> is not found.
+G4WT0 > <BLC3> is not found.
+G4WT0 > <BRC4> is not found.
+G4WT0 > <BLC4> is not found.
+G4WT0 > <BRC5> is not found.
+G4WT0 > <BLC5> is not found.
+G4WT0 > <BRC6> is not found.
+G4WT0 > <BLC6> is not found.
+G4WT0 > <BRC7> is not found.
+G4WT0 > <BLC7> is not found.
+G4WT0 > <BRC8> is not found.
+G4WT0 > <BLC8> is not found.
+G4WT0 > <BRC9> is not found.
+G4WT0 > <BLC9> is not found.
+G4WT0 > <BRC10> is not found.
+G4WT0 > <BLC10> is not found.
+G4WT0 > <BRC11> is not found.
+G4WT0 > <BLC11> is not found.
+G4WT0 > <BRC12> is not found.
+G4WT0 > <BLC12> is not found.
+G4WT0 > <BRC13> is not found.
+G4WT0 > <BLC13> is not found.
+G4WT0 > <BRC14> is not found.
+G4WT0 > <BLC14> is not found.
+G4WT0 > <BRC15> is not found.
+G4WT0 > <BLC15> is not found.
+G4WT0 > <BRC16> is not found.
+G4WT0 > <BLC16> is not found.
+G4WT0 > <BRC17> is not found.
+G4WT0 > <BLC17> is not found.
+G4WT0 > <BRC18> is not found.
+G4WT0 > <BLC18> is not found.
+G4WT0 > <BRC19> is not found.
+G4WT0 > <BLC19> is not found.
+G4WT0 > <BRC20> is not found.
+G4WT0 > <BLC20> is not found.
+G4WT0 > <BRC21> is not found.
+G4WT0 > <BLC21> is not found.
+G4WT0 > <BRC22> is not found.
+G4WT0 > <BLC22> is not found.
+G4WT0 > <BRC23> is not found.
+G4WT0 > <BLC23> is not found.
+G4WT0 > <BRC24> is not found.
+G4WT0 > <BLC24> is not found.
+G4WT0 > <BRC25> is not found.
+G4WT0 > <BLC25> is not found.
+G4WT0 > <BRC26> is not found.
+G4WT0 > <BLC26> is not found.
+G4WT0 > <BRC27> is not found.
+G4WT0 > <BLC27> is not found.
+G4WT0 > <BRC28> is not found.
+G4WT0 > <BLC28> is not found.
+G4WT0 > <BRC29> is not found.
+G4WT0 > <BLC29> is not found.
+G4WT0 > <BRC30> is not found.
+G4WT0 > <BLC30> is not found.
+G4WT0 > <BRC31> is not found.
+G4WT0 > <BLC31> is not found.
+G4WT0 > <BRC32> is not found.
+G4WT0 > <BLC32> is not found.
+G4WT0 > <BRC33> is not found.
+G4WT0 > <BLC33> is not found.
+G4WT0 > <BRC34> is not found.
+G4WT0 > <BLC34> is not found.
+G4WT0 > <BRC35> is not found.
+G4WT0 > <BLC35> is not found.
+G4WT0 > <BRC36> is not found.
+G4WT0 > <BLC36> is not found.
+G4WT0 > <BRC37> is not found.
+G4WT0 > <BLC37> is not found.
+G4WT0 > <BRC38> is not found.
+G4WT0 > <BLC38> is not found.
+G4WT0 > <BRC39> is not found.
+G4WT0 > <BLC39> is not found.
+G4WT0 > <BRC40> is not found.
+G4WT0 > <BLC40> is not found.
+G4WT0 > <BRC41> is not found.
+G4WT0 > <BLC41> is not found.
+G4WT0 > <BRC42> is not found.
+G4WT0 > <BLC42> is not found.
+G4WT0 > <BRC43> is not found.
+G4WT0 > <BLC43> is not found.
+G4WT0 > <BRC44> is not found.
+G4WT0 > <BLC44> is not found.
+G4WT0 > <BRC45> is not found.
+G4WT0 > <BLC45> is not found.
+G4WT0 > <BRC46> is not found.
+G4WT0 > <BLC46> is not found.
+G4WT0 > <BRC47> is not found.
+G4WT0 > <BLC47> is not found.
+G4WT0 > <BRC48> is not found.
+G4WT0 > <BLC48> is not found.
+G4WT0 > <BRC49> is not found.
+G4WT0 > <BLC49> is not found.
+G4WT0 > <BRC50> is not found.
+G4WT0 > <BLC50> is not found.
+G4WT0 > <BRC51> is not found.
+G4WT0 > <BLC51> is not found.
+G4WT0 > <ERC0> is not found.
+G4WT0 > <ELC0> is not found.
+G4WT0 > <ERC1> is not found.
+G4WT0 > <ELC1> is not found.
+G4WT0 > <ERC2> is not found.
+G4WT0 > <ELC2> is not found.
+G4WT0 > <ERC3> is not found.
+G4WT0 > <ELC3> is not found.
+G4WT0 > <ERC4> is not found.
+G4WT0 > <ELC4> is not found.
+G4WT0 > <ERC5> is not found.
+G4WT0 > <ELC5> is not found.
+G4WT0 > <ERC6> is not found.
+G4WT0 > <ELC6> is not found.
+G4WT0 > <ERC7> is not found.
+G4WT0 > <ELC7> is not found.
+G4WT0 > <ERC8> is not found.
+G4WT0 > <ELC8> is not found.
+G4WT0 > <ERC9> is not found.
+G4WT0 > <ELC9> is not found.
+G4WT0 > <ERC10> is not found.
+G4WT0 > <ELC10> is not found.
+G4WT0 > <ERC11> is not found.
+G4WT0 > <ELC11> is not found.
+G4WT0 > <ERC12> is not found.
+G4WT0 > <ELC12> is not found.
+G4WT0 > <ERC13> is not found.
+G4WT0 > <ELC13> is not found.
+G4WT0 > <ERC14> is not found.
+G4WT0 > <ELC14> is not found.
+G4WT0 > <ERC15> is not found.
+G4WT0 > <ELC15> is not found.
+G4WT0 > <ERC16> is not found.
+G4WT0 > <ELC16> is not found.
+G4WT0 > <ERC17> is not found.
+G4WT0 > <ELC17> is not found.
+G4WT0 > <ERC18> is not found.
+G4WT0 > <ELC18> is not found.
+G4WT0 > <ERC19> is not found.
+G4WT0 > <ELC19> is not found.
+G4WT0 > <ERC20> is not found.
+G4WT0 > <ELC20> is not found.
+G4WT0 > <ERC21> is not found.
+G4WT0 > <ELC21> is not found.
+G4WT0 > <ERC22> is not found.
+G4WT0 > <ELC22> is not found.
+G4WT0 > <ERC23> is not found.
+G4WT0 > <ELC23> is not found.
+G4WT0 > <ERC24> is not found.
+G4WT0 > <ELC24> is not found.
+G4WT0 > <ERC25> is not found.
+G4WT0 > <ELC25> is not found.
+G4WT0 > <ERC26> is not found.
+G4WT0 > <ELC26> is not found.
+G4WT0 > <ERC27> is not found.
+G4WT0 > <ELC27> is not found.
+G4WT0 > <ERC28> is not found.
+G4WT0 > <ELC28> is not found.
+G4WT0 > <ERC29> is not found.
+G4WT0 > <ELC29> is not found.
+G4WT0 > <ERC30> is not found.
+G4WT0 > <ELC30> is not found.
+G4WT0 > <ERC31> is not found.
+G4WT0 > <ELC31> is not found.
+G4WT0 > <ERC32> is not found.
+G4WT0 > <ELC32> is not found.
+G4WT0 > <ERC33> is not found.
+G4WT0 > <ELC33> is not found.
+G4WT0 > <ERC34> is not found.
+G4WT0 > <ELC34> is not found.
+G4WT0 > <ERC35> is not found.
+G4WT0 > <ELC35> is not found.
+G4WT0 > <ERC36> is not found.
+G4WT0 > <ELC36> is not found.
+G4WT0 > <ERC37> is not found.
+G4WT0 > <ELC37> is not found.
+G4WT0 > <ERC38> is not found.
+G4WT0 > <ELC38> is not found.
+G4WT0 > <ERC39> is not found.
+G4WT0 > <ELC39> is not found.
+G4WT0 > --> Event 1 starts with initial seeds (51242475,23394483).
+G4WT0 > <BRC0> is not found.
+G4WT0 > <BLC0> is not found.
+G4WT0 > <BRC1> is not found.
+G4WT0 > <BLC1> is not found.
+G4WT0 > <BRC2> is not found.
+G4WT0 > <BLC2> is not found.
+G4WT0 > <BRC3> is not found.
+G4WT0 > <BLC3> is not found.
+G4WT0 > <BRC4> is not found.
+G4WT0 > <BLC4> is not found.
+G4WT0 > <BRC5> is not found.
+G4WT0 > <BLC5> is not found.
+G4WT0 > <BRC6> is not found.
+G4WT0 > <BLC6> is not found.
+G4WT0 > <BRC7> is not found.
+G4WT0 > <BLC7> is not found.
+G4WT0 > <BRC8> is not found.
+G4WT0 > <BLC8> is not found.
+G4WT0 > <BRC9> is not found.
+G4WT0 > <BLC9> is not found.
+G4WT0 > <BRC10> is not found.
+G4WT0 > <BLC10> is not found.
+G4WT0 > <BRC11> is not found.
+G4WT0 > <BLC11> is not found.
+G4WT0 > <BRC12> is not found.
+G4WT0 > <BLC12> is not found.
+G4WT0 > <BRC13> is not found.
+G4WT0 > <BLC13> is not found.
+G4WT0 > <BRC14> is not found.
+G4WT0 > <BLC14> is not found.
+G4WT0 > <BRC15> is not found.
+G4WT0 > <BLC15> is not found.
+G4WT0 > <BRC16> is not found.
+G4WT0 > <BLC16> is not found.
+G4WT0 > <BRC17> is not found.
+G4WT0 > <BLC17> is not found.
+G4WT0 > <BRC18> is not found.
+G4WT0 > <BLC18> is not found.
+G4WT0 > <BRC19> is not found.
+G4WT0 > <BLC19> is not found.
+G4WT0 > <BRC20> is not found.
+G4WT0 > <BLC20> is not found.
+G4WT0 > <BRC21> is not found.
+G4WT0 > <BLC21> is not found.
+G4WT0 > <BRC22> is not found.
+G4WT0 > <BLC22> is not found.
+G4WT0 > <BRC23> is not found.
+G4WT0 > <BLC23> is not found.
+G4WT0 > <BRC24> is not found.
+G4WT0 > <BLC24> is not found.
+G4WT0 > <BRC25> is not found.
+G4WT0 > <BLC25> is not found.
+G4WT0 > <BRC26> is not found.
+G4WT0 > <BLC26> is not found.
+G4WT0 > <BRC27> is not found.
+G4WT0 > <BLC27> is not found.
+G4WT0 > <BRC28> is not found.
+G4WT0 > <BLC28> is not found.
+G4WT0 > <BRC29> is not found.
+G4WT0 > <BLC29> is not found.
+G4WT0 > <BRC30> is not found.
+G4WT0 > <BLC30> is not found.
+G4WT0 > <BRC31> is not found.
+G4WT0 > <BLC31> is not found.
+G4WT0 > <BRC32> is not found.
+G4WT0 > <BLC32> is not found.
+G4WT0 > <BRC33> is not found.
+G4WT0 > <BLC33> is not found.
+G4WT0 > <BRC34> is not found.
+G4WT0 > <BLC34> is not found.
+G4WT0 > <BRC35> is not found.
+G4WT0 > <BLC35> is not found.
+G4WT0 > <BRC36> is not found.
+G4WT0 > <BLC36> is not found.
+G4WT0 > <BRC37> is not found.
+G4WT0 > <BLC37> is not found.
+G4WT0 > <BRC38> is not found.
+G4WT0 > <BLC38> is not found.
+G4WT0 > <BRC39> is not found.
+G4WT0 > <BLC39> is not found.
+G4WT0 > <BRC40> is not found.
+G4WT0 > <BLC40> is not found.
+G4WT0 > <BRC41> is not found.
+G4WT0 > <BLC41> is not found.
+G4WT0 > <BRC42> is not found.
+G4WT0 > <BLC42> is not found.
+G4WT0 > <BRC43> is not found.
+G4WT0 > <BLC43> is not found.
+G4WT0 > <BRC44> is not found.
+G4WT0 > <BLC44> is not found.
+G4WT0 > <BRC45> is not found.
+G4WT0 > <BLC45> is not found.
+G4WT0 > <BRC46> is not found.
+G4WT0 > <BLC46> is not found.
+G4WT0 > <BRC47> is not found.
+G4WT0 > <BLC47> is not found.
+G4WT0 > <BRC48> is not found.
+G4WT0 > <BLC48> is not found.
+G4WT0 > <BRC49> is not found.
+G4WT0 > <BLC49> is not found.
+G4WT0 > <BRC50> is not found.
+G4WT0 > <BLC50> is not found.
+G4WT0 > <BRC51> is not found.
+G4WT0 > <BLC51> is not found.
+G4WT0 > <ERC0> is not found.
+G4WT0 > <ELC0> is not found.
+G4WT0 > <ERC1> is not found.
+G4WT0 > <ELC1> is not found.
+G4WT0 > <ERC2> is not found.
+G4WT0 > <ELC2> is not found.
+G4WT0 > <ERC3> is not found.
+G4WT0 > <ELC3> is not found.
+G4WT0 > <ERC4> is not found.
+G4WT0 > <ELC4> is not found.
+G4WT0 > <ERC5> is not found.
+G4WT0 > <ELC5> is not found.
+G4WT0 > <ERC6> is not found.
+G4WT0 > <ELC6> is not found.
+G4WT0 > <ERC7> is not found.
+G4WT0 > <ELC7> is not found.
+G4WT0 > <ERC8> is not found.
+G4WT0 > <ELC8> is not found.
+G4WT0 > <ERC9> is not found.
+G4WT0 > <ELC9> is not found.
+G4WT0 > <ERC10> is not found.
+G4WT0 > <ELC10> is not found.
+G4WT0 > <ERC11> is not found.
+G4WT0 > <ELC11> is not found.
+G4WT0 > <ERC12> is not found.
+G4WT0 > <ELC12> is not found.
+G4WT0 > <ERC13> is not found.
+G4WT0 > <ELC13> is not found.
+G4WT0 > <ERC14> is not found.
+G4WT0 > <ELC14> is not found.
+G4WT0 > <ERC15> is not found.
+G4WT0 > <ELC15> is not found.
+G4WT0 > <ERC16> is not found.
+G4WT0 > <ELC16> is not found.
+G4WT0 > <ERC17> is not found.
+G4WT0 > <ELC17> is not found.
+G4WT0 > <ERC18> is not found.
+G4WT0 > <ELC18> is not found.
+G4WT0 > <ERC19> is not found.
+G4WT0 > <ELC19> is not found.
+G4WT0 > <ERC20> is not found.
+G4WT0 > <ELC20> is not found.
+G4WT0 > <ERC21> is not found.
+G4WT0 > <ELC21> is not found.
+G4WT0 > <ERC22> is not found.
+G4WT0 > <ELC22> is not found.
+G4WT0 > <ERC23> is not found.
+G4WT0 > <ELC23> is not found.
+G4WT0 > <ERC24> is not found.
+G4WT0 > <ELC24> is not found.
+G4WT0 > <ERC25> is not found.
+G4WT0 > <ELC25> is not found.
+G4WT0 > <ERC26> is not found.
+G4WT0 > <ELC26> is not found.
+G4WT0 > <ERC27> is not found.
+G4WT0 > <ELC27> is not found.
+G4WT0 > <ERC28> is not found.
+G4WT0 > <ELC28> is not found.
+G4WT0 > <ERC29> is not found.
+G4WT0 > <ELC29> is not found.
+G4WT0 > <ERC30> is not found.
+G4WT0 > <ELC30> is not found.
+G4WT0 > <ERC31> is not found.
+G4WT0 > <ELC31> is not found.
+G4WT0 > <ERC32> is not found.
+G4WT0 > <ELC32> is not found.
+G4WT0 > <ERC33> is not found.
+G4WT0 > <ELC33> is not found.
+G4WT0 > <ERC34> is not found.
+G4WT0 > <ELC34> is not found.
+G4WT0 > <ERC35> is not found.
+G4WT0 > <ELC35> is not found.
+G4WT0 > <ERC36> is not found.
+G4WT0 > <ELC36> is not found.
+G4WT0 > <ERC37> is not found.
+G4WT0 > <ELC37> is not found.
+G4WT0 > <ERC38> is not found.
+G4WT0 > <ELC38> is not found.
+G4WT0 > <ERC39> is not found.
+G4WT0 > <ELC39> is not found.
+G4WT0 > Thread-local run terminated.
+G4WT0 > Run Summary
+G4WT0 >   Number of events processed : 2
+G4WT0 >   User=0.570000s Real=0.603032s Sys=0.000000s [Cpu=94.5%]
+ Run terminated.
+Run Summary
+  Number of events processed : 2
+  User=0.570000s Real=0.603973s Sys=0.000000s [Cpu=94.4%]
+Graphics systems deleted.
+Visualization Manager deleting...
+G4WT0 > Destroying WorkerRunManager (0x2adebc03e500)
+G4WT0 > G4 kernel has come to Quit state.
+G4WT0 > ================== Deleting memory pools ===================
+G4WT0 > Number of memory pools allocated: 10; of which, static: 0
+G4WT0 > Dynamic pools deleted: 10 / Total memory freed: 0.063 MB
+G4WT0 > ============================================================
+G4WT0 > Thread-local UImanager is to be deleted.
+G4WT0 > There should not be any thread-local G4cout/G4cerr hereafter.
+G4 kernel has come to Quit state.
+================== Deleting memory pools ===================
+Number of memory pools allocated: 4; of which, static: 0
+Dynamic pools deleted: 4 / Total memory freed: 0.0058 MB
+============================================================
+RunManagerKernel is deleted. Good bye :)

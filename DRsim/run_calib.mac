@@ -1,0 +1,20 @@
+#This macro can not be executed standalone
+/DRsim/action/useHepMC False
+/DRsim/action/useCalib True
+
+/vis/disable
+/run/numberOfThreads 1
+/run/initialize
+/run/verbose 1
+
+/DRsim/generator/theta -0.976949933151942
+/DRsim/generator/phi 0.0174533
+/DRsim/generator/y0 -4.4381248086486
+/DRsim/generator/z0 -14.4921175391745
+/DRsim/generator/randx 0.
+/DRsim/generator/randy 0.
+
+/gun/particle e-
+/gun/energy 1 eV
+/run/beamOn 1
+
