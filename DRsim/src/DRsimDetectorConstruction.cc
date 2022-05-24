@@ -136,7 +136,7 @@ G4VPhysicalVolume* DRsimDetectorConstruction::Construct() {
   fulltheta = 0.95717;
   dimE->Rbool(1);
 
-  Endcap(towerLogicalER,PMTGLogicalER,PMTfilterLogicalER,PMTcellLogicalER,PMTcathLogicalER,fiberLogical_ER,fiberLogical_ER_,fTowerER);
+  // Endcap(towerLogicalER,PMTGLogicalER,PMTfilterLogicalER,PMTcellLogicalER,PMTcathLogicalER,fiberLogical_ER,fiberLogical_ER_,fTowerER);
   // draw  right side of endcap towser
 
   // endcap L
@@ -219,7 +219,7 @@ void DRsimDetectorConstruction::Barrel(G4LogicalVolume* towerLogical[], G4Logica
     G4cout << i << ">> x : " <<  dimB->GetOrigin(0).x() << " y : " <<dimB->GetOrigin(0).y()  << " z : " <<dimB->GetOrigin(0).z() << " center_distance : " <<dimB->GetOrigin(0).mag() << G4endl;
 
     dimB->Getpt(pt);
-    // fiberBarrel(i,fDThetaBarrel[i],towerLogical,fiberLogical,fiberLogical_);
+    fiberBarrel(i,fDThetaBarrel[i],towerLogical,fiberLogical,fiberLogical_);
     // applying fiber
 
     int iTheta = dimB->GetRbool() ? i : -i-1;
