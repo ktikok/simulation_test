@@ -342,62 +342,62 @@ void DRsimDetectorConstruction::DefineCommands() {}
 
 void DRsimDetectorConstruction::fiberBarrel(G4int i, G4double deltatheta_,G4LogicalVolume* towerLogical[], std::vector<G4LogicalVolume*> fiberLogical[], std::vector<G4LogicalVolume*> fiberLogical_[]) {
 
-//  fFiberX.clear();
-//  fFiberY.clear();
-//  fFiberWhich.clear();
-//
-//  v1 = dimB->GetV1();
-//  v2 = dimB->GetV2();
-//  v3 = dimB->GetV3();
-//  v4 = dimB->GetV4();
-//
-//  innerSide_half = dimB->GetInnerR_new()*tan(deltatheta_/2.);
-//  outerSide_half = (dimB->GetInnerR_new()+towerH)*tan(deltatheta_/2.);
-//
-//  int numx = (int)(((v4.getX()*tan(phi_unit/2.)*2)-1.2*mm)/(1.5*mm)) + 1;
-//  int numy = (int)((outerSide_half*2-1.2*mm)/(1.5*mm)) + 1;
-//  fTowerXY = std::make_pair(numx,numy);
-//
-//  G4bool fWhich = false;
-//  for (int j = 0; j < numy; j++) {
-//    for (int k = 0; k < numx; k++) {
-//      G4float fX = -1.5*mm*(numx/2) + k*1.5*mm + ( numx%2==0 ? 0.75*mm : 0 );
-//      G4float fY = -1.5*mm*(numy/2) + j*1.5*mm + ( numy%2==0 ? 0.75*mm : 0 );
-//      fWhich = !fWhich;
-//      fFiberX.push_back(fX);
-//      fFiberY.push_back(fY);
-//      fFiberWhich.push_back(fWhich);
-//    }
-//    if ( numx%2==0 ) { fWhich = !fWhich; }
-//  }
-//
-//  for (unsigned int j = 0; j<fFiberX.size();j++) {
-//
-//    if ( !fFiberWhich.at(j) ) { //c fibre
-//
-//      intersect = new G4IntersectionSolid("fiber_",fiber,tower,0,G4ThreeVector(-fFiberX.at(j),-fFiberY.at(j),0.));
-//      fiberLogical[i].push_back(new G4LogicalVolume(intersect,FindMaterial("FluorinatedPolymer"),name));
-//      new G4PVPlacement(0,G4ThreeVector(fFiberX.at(j),fFiberY.at(j),0),fiberLogical[i].at(j),name,towerLogical[i],false,j,checkOverlaps);
-//
-//      intersect_ = new G4IntersectionSolid("fiber_",fiberC,tower,0,G4ThreeVector(-fFiberX.at(j),-fFiberY.at(j),0.));
-//      fiberLogical_[i].push_back(new G4LogicalVolume(intersect_,FindMaterial("PMMA"),name));
-//      new G4PVPlacement(0,G4ThreeVector(0.,0.,0.),fiberLogical_[i].at(j),name,fiberLogical[i].at(j),false,j,checkOverlaps);
-//
-//      fiberLogical[i].at(j)->SetVisAttributes(fVisAttrGray);
-//      fiberLogical_[i].at(j)->SetVisAttributes(fVisAttrBlue);
-//    } else { // s fibre
-//      intersect = new G4IntersectionSolid("fiber_",fiber,tower,0,G4ThreeVector(-fFiberX.at(j),-fFiberY.at(j),0.));
-//      fiberLogical[i].push_back(new G4LogicalVolume(intersect,FindMaterial("PMMA"),name));
-//      new G4PVPlacement(0,G4ThreeVector(fFiberX.at(j),fFiberY.at(j),0),fiberLogical[i].at(j),name,towerLogical[i],false,j,checkOverlaps);
-//
-//      intersect_ = new G4IntersectionSolid("fiber_",fiberS,tower,0,G4ThreeVector(-fFiberX.at(j),-fFiberY.at(j),0.));
-//      fiberLogical_[i].push_back(new G4LogicalVolume(intersect_,FindMaterial("Polystyrene"),name));
-//      new G4PVPlacement(0,G4ThreeVector(0.,0.,0.),fiberLogical_[i].at(j),name,fiberLogical[i].at(j),false,j,checkOverlaps);
-//
-//      fiberLogical[i].at(j)->SetVisAttributes(fVisAttrGray);
-//      fiberLogical_[i].at(j)->SetVisAttributes(fVisAttrOrange);
-//    }
-//  }
+ fFiberX.clear();
+ fFiberY.clear();
+ fFiberWhich.clear();
+
+ v1 = dimB->GetV1();
+ v2 = dimB->GetV2();
+ v3 = dimB->GetV3();
+ v4 = dimB->GetV4();
+
+ innerSide_half = dimB->GetInnerR_new()*tan(deltatheta_/2.);
+ outerSide_half = (dimB->GetInnerR_new()+towerH)*tan(deltatheta_/2.);
+
+ int numx = (int)(((v4.getX()*tan(phi_unit/2.)*2)-1.2*mm)/(1.5*mm)) + 1;
+ int numy = (int)((outerSide_half*2-1.2*mm)/(1.5*mm)) + 1;
+ fTowerXY = std::make_pair(numx,numy);
+
+ G4bool fWhich = false;
+ for (int j = 0; j < numy; j++) {
+   for (int k = 0; k < numx; k++) {
+     G4float fX = -1.5*mm*(numx/2) + k*1.5*mm + ( numx%2==0 ? 0.75*mm : 0 );
+     G4float fY = -1.5*mm*(numy/2) + j*1.5*mm + ( numy%2==0 ? 0.75*mm : 0 );
+     fWhich = !fWhich;
+     fFiberX.push_back(fX);
+     fFiberY.push_back(fY);
+     fFiberWhich.push_back(fWhich);
+   }
+   if ( numx%2==0 ) { fWhich = !fWhich; }
+ }
+
+ for (unsigned int j = 0; j<fFiberX.size();j++) {
+
+   if ( !fFiberWhich.at(j) ) { //c fibre
+
+     intersect = new G4IntersectionSolid("fiber_",fiber,tower,0,G4ThreeVector(-fFiberX.at(j),-fFiberY.at(j),0.));
+     fiberLogical[i].push_back(new G4LogicalVolume(intersect,FindMaterial("FluorinatedPolymer"),name));
+     new G4PVPlacement(0,G4ThreeVector(fFiberX.at(j),fFiberY.at(j),0),fiberLogical[i].at(j),name,towerLogical[i],false,j,checkOverlaps);
+
+     intersect_ = new G4IntersectionSolid("fiber_",fiberC,tower,0,G4ThreeVector(-fFiberX.at(j),-fFiberY.at(j),0.));
+     fiberLogical_[i].push_back(new G4LogicalVolume(intersect_,FindMaterial("PMMA"),name));
+     new G4PVPlacement(0,G4ThreeVector(0.,0.,0.),fiberLogical_[i].at(j),name,fiberLogical[i].at(j),false,j,checkOverlaps);
+
+     fiberLogical[i].at(j)->SetVisAttributes(fVisAttrGray);
+     fiberLogical_[i].at(j)->SetVisAttributes(fVisAttrBlue);
+   } else { // s fibre
+     intersect = new G4IntersectionSolid("fiber_",fiber,tower,0,G4ThreeVector(-fFiberX.at(j),-fFiberY.at(j),0.));
+     fiberLogical[i].push_back(new G4LogicalVolume(intersect,FindMaterial("PMMA"),name));
+     new G4PVPlacement(0,G4ThreeVector(fFiberX.at(j),fFiberY.at(j),0),fiberLogical[i].at(j),name,towerLogical[i],false,j,checkOverlaps);
+
+     intersect_ = new G4IntersectionSolid("fiber_",fiberS,tower,0,G4ThreeVector(-fFiberX.at(j),-fFiberY.at(j),0.));
+     fiberLogical_[i].push_back(new G4LogicalVolume(intersect_,FindMaterial("Polystyrene"),name));
+     new G4PVPlacement(0,G4ThreeVector(0.,0.,0.),fiberLogical_[i].at(j),name,fiberLogical[i].at(j),false,j,checkOverlaps);
+
+     fiberLogical[i].at(j)->SetVisAttributes(fVisAttrGray);
+     fiberLogical_[i].at(j)->SetVisAttributes(fVisAttrOrange);
+   }
+ }
 }
 
 void DRsimDetectorConstruction::fiberEndcap(G4int i, G4double deltatheta_, G4LogicalVolume* towerLogical[], std::vector<G4LogicalVolume*> fiberLogical[], std::vector<G4LogicalVolume*> fiberLogical_[]) {
