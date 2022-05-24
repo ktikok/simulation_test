@@ -185,7 +185,7 @@ void DRsimDetectorConstruction::ConstructSDandField() {
 void DRsimDetectorConstruction::Barrel(G4LogicalVolume* towerLogical[], G4LogicalVolume* PMTGLogical[], G4LogicalVolume* PMTfilterLogical[], G4LogicalVolume* PMTcellLogical[],
   G4LogicalVolume* PMTcathLogical[], std::vector<G4LogicalVolume*> fiberLogical[], std::vector<G4LogicalVolume*> fiberLogical_[], std::vector<DRsimInterface::DRsimTowerProperty>& towerProps) {
 
-  for (int i = 0; i < 52; i++) {
+  for (int i = 0; i < 1; i++) {
   // for (int i = 0; i < 1; i++) {
     float towerTheta = fulltheta + fDThetaBarrel[i]/2.;
     dimB->SetDeltaTheta(fDThetaBarrel[i]);
