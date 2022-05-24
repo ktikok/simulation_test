@@ -3,15 +3,15 @@
 /run/physicsModified 
 /control/verbose 2
 /tracking/storeTrajectory 2
-/DRsim/generator/randx 10
-/DRsim/generator/randy 10
-/DRsim/generator/theta -0.03728991884
-/DRsim/generator/phi 0.017453293
-/DRsim/generator/y0 -3.1132348
-/DRsim/generator/z0 -4.716005797
-/gun/particle mu+
-/gun/energy 1 MeV
--1 -1 none m 0 0 0 0 0 0
+s/open OGL 600x600-0+0
+/vis/sceneHandler/create OGL
+/vis/viewer/create ! ! 600x600-0+0
+/vis/viewer/refresh
+/vis/viewer/set/autoRefresh false
+/vis/verbose errors
+/vis/drawVolume
+/vis/scene/create
+/vis/scene/add/volume world -1 -1 none m 0 0 0 0 0 0
 /vis/sceneHandler/attach
 /vis/viewer/set/upVector 1 0 0
 /vis/viewer/set/viewpointVector 0 1 0
@@ -73,26 +73,3 @@
 /gui/addButton viewer "Flush viewer (= refresh + update)" "/vis/viewer/flush"
 /gui/addButton viewer "Update scene" "/vis/scene/notifyHandlers"
 /gui/addIcon "Run beam on" user_icon "/run/beamOn 1" run.png
-/vis/viewer/set/viewpointVector -3050.15 0 -33.8885
-/vis/viewer/refresh
-/DRsim/generator/randx 10
-/DRsim/generator/randy 10
-/DRsim/generator/theta -0.03728991884
-/DRsim/generator/phi 0.017453293
-/DRsim/generator/y0 -3.1132348
-/DRsim/generator/z0 -4.716005797
-/gun/particle mu+
-/gun/energy 1 MeV
-/vis/set/touchable worldPhysical 0
-/run/beamOn 1
-/vis/viewer/set/viewpointVector -3050.15 0 -33.8885
-/vis/viewer/refresh
-/vis/viewer/set/viewpointVector -3050.15 0 -33.8885
-/vis/viewer/refresh
-/vis/viewer/set/viewpointVector -3050.15 0 -33.8885
-/vis/viewer/refresh
-/vis/viewer/set/viewpointVector -3050.15 0 -33.8885
-/vis/viewer/refresh
-/vis/viewer/set/viewpointVector -3050.15 0 -33.8885
-/vis/viewer/refresh
-/vis/set/touchable worldPhysical 0
