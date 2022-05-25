@@ -360,15 +360,20 @@ void DRsimDetectorConstruction::fiberBarrel(G4int i, G4double deltatheta_,G4Logi
  innerSide_half = dimB->GetInnerR_new()*tan(deltatheta_/2.);
  outerSide_half = (dimB->GetInnerR_new()+towerH)*tan(deltatheta_/2.);
 
- int numx = (int)(((v4.getX()*tan(phi_unit/2.)*2)-1.2*mm)/(1.5*mm)) + 1;
- int numy = (int)((outerSide_half*2-1.2*mm)/(1.5*mm)) + 1;
+//  int numx = (int)(((v4.getX()*tan(phi_unit/2.)*2)-1.2*mm)/(1.5*mm)) + 1;
+//  int numy = (int)((outerSide_half*2-1.2*mm)/(1.5*mm)) + 1;
+ int numx = (int)(((v4.getX()*tan(phi_unit/2.)*2)-1.2*mm)/(1.01*mm)) + 1;
+ int numy = (int)((outerSide_half*2-1.2*mm)/(1.01*mm)) + 1;
+ 
  fTowerXY = std::make_pair(numx,numy);
 
  G4bool fWhich = false;
  for (int j = 0; j < numy; j++) {//y-axis
    for (int k = 0; k < numx; k++) {//x-axis
-     G4float fX = -1.5*mm*(numx/2) + k*1.5*mm + ( numx%2==0 ? 0.75*mm : 0 );
-     G4float fY = -1.5*mm*(numy/2) + j*1.5*mm + ( numy%2==0 ? 0.75*mm : 0 );
+     G4float fX = -1.01*mm*(numx/2) + k*1.01*mm + ( numx%2==0 ? 0.075*mm : 0 ); // radius of fiber is 0.5
+     G4float fY = -1.01*mm*(numy/2) + j*1.01*mm + ( numy%2==0 ? 0.075*mm : 0 );
+    //  G4float fX = -1.5*mm*(numx/2) + k*1.5*mm + ( numx%2==0 ? 0.75*mm : 0 );
+    //  G4float fY = -1.5*mm*(numy/2) + j*1.5*mm + ( numy%2==0 ? 0.75*mm : 0 );
      fWhich = !fWhich;
      fFiberX.push_back(fX);
      fFiberY.push_back(fY);
@@ -379,7 +384,7 @@ void DRsimDetectorConstruction::fiberBarrel(G4int i, G4double deltatheta_,G4Logi
 
  for (unsigned int j = 0; j<fFiberX.size();j++) {
 
-   if ( !fFiberWhich.at(j) ) { //c fibre
+   if ( !fFiberWhich.at(j) ) { //c fibre if false
 
      intersect = new G4IntersectionSolid("fiber_",fiber,tower,0,G4ThreeVector(-fFiberX.at(j),-fFiberY.at(j),0.));
      fiberLogical[i].push_back(new G4LogicalVolume(intersect,FindMaterial("FluorinatedPolymer"),name));
