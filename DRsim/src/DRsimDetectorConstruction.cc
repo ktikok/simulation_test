@@ -369,17 +369,20 @@ void DRsimDetectorConstruction::fiberBarrel(G4int i, G4double deltatheta_,G4Logi
 
  G4bool fWhich = false;
  for (int j = 0; j < numy; j++) {//y-axis
+    std::cout << j << "y : " << fWhich  << std::endl;
+
    for (int k = 0; k < numx; k++) {//x-axis
      G4float fX = -1.01*mm*(numx/2) + k*1.01*mm + ( numx%2==0 ? 0.075*mm : 0 ); // radius of fiber is 0.5
      G4float fY = -1.01*mm*(numy/2) + j*1.01*mm + ( numy%2==0 ? 0.075*mm : 0 );
     //  G4float fX = -1.5*mm*(numx/2) + k*1.5*mm + ( numx%2==0 ? 0.75*mm : 0 );
     //  G4float fY = -1.5*mm*(numy/2) + j*1.5*mm + ( numy%2==0 ? 0.75*mm : 0 );
-     fWhich = !fWhich;
+    //  fWhich = !fWhich;
      fFiberX.push_back(fX);
      fFiberY.push_back(fY);
      fFiberWhich.push_back(fWhich);
    }
    if ( numx%2==0 ) { fWhich = !fWhich; }
+   else{  fWhich = !fWhich; }
  }
 
  for (unsigned int j = 0; j<fFiberX.size();j++) {
