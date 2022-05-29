@@ -114,7 +114,7 @@ G4VPhysicalVolume* DRsimDetectorConstruction::Construct() {
   fiber = new G4Tubs("fiber",0,clad_C_rMax,towerH/2.,0*deg,360.*deg);// S is the same
   fiberC = new G4Tubs("fiberC",0,core_C_rMax,towerH/2.,0*deg,360.*deg);
   fiberS = new G4Tubs("fiberS",0,core_S_rMax,towerH/2.,0*deg,360.*deg);
-  fiberCopper = new G4Tubs("fiberCopper",0,clad_C_rMax,towerH/2.,0*deg,360.*deg);
+  fiberCopper = new G4Tubs("fiberCopper",0,core_C_rMax,towerH/2.,0*deg,360.*deg);
 
   // barrel
 
@@ -377,7 +377,7 @@ void DRsimDetectorConstruction::fiberBarrel(G4int i, G4double deltatheta_,G4Logi
  G4bool fWhich = false;
  for (int j = 0; j < numy; j++) {//y-axis
     // std::cout << j << "y : " << fWhich  << std::endl;
-
+  
    for (int k = 0; k < numx; k++) {//x-axis
      G4float fX = -1.01*mm*(numx/2) + k*1.01*mm + ( numx%2==0 ? 0.505*mm : 0 ); // radius of fiber is 0.5
      G4float fY = -1.01*mm*(numy/2) + j*1.01*mm + ( numy%2==0 ? 0.505*mm : 0 );
@@ -388,21 +388,24 @@ void DRsimDetectorConstruction::fiberBarrel(G4int i, G4double deltatheta_,G4Logi
      fFiberY.push_back(fY);
      fFiberWhich.push_back(fWhich);
    }
-   if ( numx%2==0 ) { fWhich = !fWhich; }
-   else{  fWhich = !fWhich; }
+   fWhich = !fWhich;
+   
+  //  if ( numx%2==0 ) { fWhich = !fWhich; }
+  //  else{  fWhich = !fWhich; }
  }
 
  int fiberOrCopper = 1;
  for (unsigned int j = 0; j<fFiberX.size();j++) {
 
-   if ( !fFiberWhich.at(j) ) { //c fibre if false
+   if ( !fFiberWhich.at(j) ) { //0, c fibre if false
       if (j > 0){
         if ( fFiberWhich.at(j-1) ) { fiberOrCopper = 1; }
       }
       
 
       if ( fiberOrCopper ) { // put fiber
-        // std::cout << "c fiber " << std::endl;
+        // std::cout <<"j:"<<j<< ", c fiber " << std::endl;
+
         
         intersect = new G4IntersectionSolid("fiber_",fiber,tower,0,G4ThreeVector(-fFiberX.at(j),-fFiberY.at(j),0.));
         fiberLogical[i].push_back(new G4LogicalVolume(intersect,FindMaterial("FluorinatedPolymer"),name));
@@ -418,53 +421,85 @@ void DRsimDetectorConstruction::fiberBarrel(G4int i, G4double deltatheta_,G4Logi
         fiberOrCopper = 0;
       }
       else{ //put copper
-        // std::cout << "copper " << std::endl;
+        // std::cout <<"j:"<<j<< ", c fiber, copper " << std::endl;
 
-        intersect = new G4IntersectionSolid("fiber_",fiberCopper,tower,0,G4ThreeVector(-fFiberX.at(j),-fFiberY.at(j),0.));
+
+        intersect = new G4IntersectionSolid("fiber_",fiber,tower,0,G4ThreeVector(-fFiberX.at(j),-fFiberY.at(j),0.));
         fiberLogical[i].push_back(new G4LogicalVolume(intersect,FindMaterial("Copper"),name));
         new G4PVPlacement(0,G4ThreeVector(fFiberX.at(j),fFiberY.at(j),0),fiberLogical[i].at(j),name,towerLogical[i],false,j,checkOverlaps);
 
         intersect_ = new G4IntersectionSolid("fiber_",fiberCopper,tower,0,G4ThreeVector(-fFiberX.at(j),-fFiberY.at(j),0.));
         fiberLogical_[i].push_back(new G4LogicalVolume(intersect_,FindMaterial("Copper"),name));
-        new G4PVPlacement(0,G4ThreeVector(0.,0.,0.),fiberLogical_[i].at(j),name,fiberLogical[i].at(j),false,j,checkOverlaps);
+        // new G4PVPlacement(0,G4ThreeVector(0.,0.,0.),fiberLogical_[i].at(j),name,fiberLogical[i].at(j),false,j,checkOverlaps);
 
         fiberLogical[i].at(j)->SetVisAttributes(fVisAttrWhite);
-        fiberLogical_[i].at(j)->SetVisAttributes(fVisAttrWhite);
+        // fiberLogical_[i].at(j)->SetVisAttributes(fVisAttrWhite);
+        // fiberLogical[i].push_back(new G4LogicalVolume(fiber, FindMaterial("Copper"), name));
+        // new G4PVPlacement(0,G4ThreeVector(fFiberX.at(j),fFiberY.at(j),0),fiberLogical[i].at(j),name,towerLogical[i],false,j,checkOverlaps);
+
+        // // intersect_ = new G4IntersectionSolid("fiber_",fiberCopper,tower,0,G4ThreeVector(-fFiberX.at(j),-fFiberY.at(j),0.));
+        // // fiberLogical_[i].push_back(new G4LogicalVolume(intersect_,FindMaterial("Copper"),name));
+        // // new G4PVPlacement(0,G4ThreeVector(0.,0.,0.),fiberLogical_[i].at(j),name,fiberLogical[i].at(j),false,j,checkOverlaps);
+
+        // fiberLogical[i].at(j)->SetVisAttributes(fVisAttrWhite);
 
         fiberOrCopper = 1;
       }
 
    } else { // s fibre
-      if ( !fFiberWhich.at(j-1) ) { fiberOrCopper = 0; }
+      if (j > 0){
+        if ( !fFiberWhich.at(j-1) ) { fiberOrCopper = 0; }
+      }
+
       if ( fiberOrCopper ) { // put fiber
-        // std::cout << "s fiber " << std::endl;
+        // std::cout <<"j:"<<j<< ", s fiber " << std::endl;
 
         intersect = new G4IntersectionSolid("fiber_",fiber,tower,0,G4ThreeVector(-fFiberX.at(j),-fFiberY.at(j),0.));
+        // std::cout <<"j:"<<j<< ", s fiber clad" << std::endl;
         fiberLogical[i].push_back(new G4LogicalVolume(intersect,FindMaterial("PMMA"),name));
+        // std::cout <<"j:"<<j<< ", s fiber clad" << std::endl;
         new G4PVPlacement(0,G4ThreeVector(fFiberX.at(j),fFiberY.at(j),0),fiberLogical[i].at(j),name,towerLogical[i],false,j,checkOverlaps);
+        // std::cout <<"j:"<<j<< ", s fiber clad" << std::endl;
 
         intersect_ = new G4IntersectionSolid("fiber_",fiberS,tower,0,G4ThreeVector(-fFiberX.at(j),-fFiberY.at(j),0.));
         fiberLogical_[i].push_back(new G4LogicalVolume(intersect_,FindMaterial("Polystyrene"),name));
         new G4PVPlacement(0,G4ThreeVector(0.,0.,0.),fiberLogical_[i].at(j),name,fiberLogical[i].at(j),false,j,checkOverlaps);
+        std::cout <<"j:"<<j<< ", s fiber core" << std::endl;
 
         fiberLogical[i].at(j)->SetVisAttributes(fVisAttrGray);
         fiberLogical_[i].at(j)->SetVisAttributes(fVisAttrRed);
+        std::cout <<"j:"<<j<< ", s fiber vis" << std::endl;
 
         fiberOrCopper = 0;
       }
       else{ //put copper
-        // std::cout << "copper " << std::endl;
+        // std::cout <<"j:"<<j<< ", s fiber, copper " << std::endl;
 
-        intersect = new G4IntersectionSolid("fiber_",fiberCopper,tower,0,G4ThreeVector(-fFiberX.at(j),-fFiberY.at(j),0.));
+        ///////////////////////////////////
+
+        intersect = new G4IntersectionSolid("fiber_",fiber,tower,0,G4ThreeVector(-fFiberX.at(j),-fFiberY.at(j),0.));
         fiberLogical[i].push_back(new G4LogicalVolume(intersect,FindMaterial("Copper"),name));
         new G4PVPlacement(0,G4ThreeVector(fFiberX.at(j),fFiberY.at(j),0),fiberLogical[i].at(j),name,towerLogical[i],false,j,checkOverlaps);
 
         intersect_ = new G4IntersectionSolid("fiber_",fiberCopper,tower,0,G4ThreeVector(-fFiberX.at(j),-fFiberY.at(j),0.));
         fiberLogical_[i].push_back(new G4LogicalVolume(intersect_,FindMaterial("Copper"),name));
-        new G4PVPlacement(0,G4ThreeVector(0.,0.,0.),fiberLogical_[i].at(j),name,fiberLogical[i].at(j),false,j,checkOverlaps);
+        // new G4PVPlacement(0,G4ThreeVector(0.,0.,0.),fiberLogical_[i].at(j),name,fiberLogical[i].at(j),false,j,checkOverlaps);
 
         fiberLogical[i].at(j)->SetVisAttributes(fVisAttrWhite);
-        fiberLogical_[i].at(j)->SetVisAttributes(fVisAttrWhite);
+        // fiberLogical_[i].at(j)->SetVisAttributes(fVisAttrWhite);
+        ///////////////////////////////////
+        // intersect = new G4IntersectionSolid("fiber_",fiber,tower,0,G4ThreeVector(-fFiberX.at(j),-fFiberY.at(j),0.));
+        //  = new G4LogicalVolume(trackerTube, Al, "Tracker");
+        // fiberLogical[i].push_back(new G4LogicalVolume(intersect,FindMaterial("Copper"),name));
+        // fiberLogical[i].push_back(new G4LogicalVolume(fiber, FindMaterial("Copper"), name));
+        // new G4PVPlacement(0,G4ThreeVector(fFiberX.at(j),fFiberY.at(j),0),fiberLogical[i].at(j),name,towerLogical[i],false,j,checkOverlaps);
+
+        // // intersect_ = new G4IntersectionSolid("fiber_",fiberCopper,tower,0,G4ThreeVector(-fFiberX.at(j),-fFiberY.at(j),0.));
+        // // fiberLogical_[i].push_back(new G4LogicalVolume(intersect_,FindMaterial("Copper"),name));
+        // // new G4PVPlacement(0,G4ThreeVector(0.,0.,0.),fiberLogical_[i].at(j),name,fiberLogical[i].at(j),false,j,checkOverlaps);
+
+        // fiberLogical[i].at(j)->SetVisAttributes(fVisAttrWhite);
+        // // fiberLogical_[i].at(j)->SetVisAttributes(fVisAttrWhite);
 
         fiberOrCopper = 1;
       }
