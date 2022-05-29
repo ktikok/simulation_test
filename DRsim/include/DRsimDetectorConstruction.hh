@@ -63,6 +63,8 @@ private:
   G4VisAttributes* fVisAttrBlue;
   G4VisAttributes* fVisAttrGray;
   G4VisAttributes* fVisAttrGreen;
+  G4VisAttributes* fVisAttrRed;
+  G4VisAttributes* fVisAttrWhite;
 
   G4double innerR;
   G4double towerH;
@@ -91,6 +93,7 @@ private:
   G4Tubs* fiber_C;
   G4Tubs* fiberS;
   G4Tubs* fiberC;
+  G4Tubs* fiberCopper;
   G4VSolid* intersect;
   G4VSolid* intersect_;
 
