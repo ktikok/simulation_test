@@ -1,9 +1,9 @@
 /run/verbose 2
 /run/initialize 
 /run/physicsModified 
-/control/execute vis.mac
 /control/verbose 2
-/vis/open OGL 600x600-0+0
+/tracking/storeTrajectory 2
+s/open OGL 600x600-0+0
 /vis/sceneHandler/create OGL
 /vis/viewer/create ! ! 600x600-0+0
 /vis/viewer/refresh
@@ -73,54 +73,3 @@
 /gui/addButton viewer "Flush viewer (= refresh + update)" "/vis/viewer/flush"
 /gui/addButton viewer "Update scene" "/vis/scene/notifyHandlers"
 /gui/addIcon "Run beam on" user_icon "/run/beamOn 1" run.png
-/vis/viewer/set/picking false
-/vis/viewer/refresh
-/vis/viewer/set/picking false
-/vis/viewer/refresh
-/vis/set/touchable worldPhysical 0
-/vis/viewer/set/viewpointVector -3050.15 0 -33.8885
-/vis/viewer/refresh
-/vis/viewer/set/picking false
-/vis/viewer/refresh
-/vis/viewer/set/picking false
-/vis/viewer/refresh
-/vis/viewer/set/picking false
-/vis/viewer/refresh
-/vis/viewer/set/picking false
-/vis/viewer/refresh
-/vis/viewer/set/picking false
-/vis/viewer/refresh
-/vis/viewer/set/picking false
-/vis/viewer/refresh
-/vis/viewer/set/picking false
-/vis/viewer/refresh
-/vis/viewer/set/picking false
-/vis/viewer/refresh
-/vis/viewer/set/picking false
-/vis/viewer/refresh
-/vis/viewer/set/picking false
-/vis/viewer/refresh
-/vis/viewer/set/picking false
-/vis/viewer/refresh
-/vis/viewer/set/picking false
-/vis/viewer/refresh
-/vis/viewer/set/picking false
-/vis/viewer/refresh
-/vis/viewer/set/picking false
-/vis/viewer/refresh
-/vis/viewer/set/picking false
-/vis/viewer/refresh
-/vis/viewer/set/picking false
-/vis/viewer/refresh
-/vis/viewer/set/picking false
-/vis/viewer/refresh
-/vis/viewer/set/picking false
-/vis/viewer/refresh
-/vis/viewer/set/picking false
-/vis/viewer/refresh
-/vis/viewer/set/picking false
-/vis/viewer/refresh
-/vis/viewer/set/picking false
-/vis/viewer/refresh
-/vis/viewer/set/picking false
-/vis/viewer/refresh
