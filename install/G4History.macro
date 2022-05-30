@@ -77,17 +77,14 @@
 /vis/viewer/refresh
 /vis/viewer/set/picking false
 /vis/viewer/refresh
-/vis/viewer/set/picking false
-/vis/viewer/refresh
-/vis/viewer/set/picking false
-/vis/viewer/refresh
-/vis/viewer/set/picking false
-/vis/viewer/refresh
-/vis/viewer/set/picking false
+/vis/viewer/set/viewpointVector -3050.15 0 -33.8885
 /vis/viewer/refresh
 /vis/set/touchable worldPhysical 0
 /vis/viewer/set/picking false
 /vis/viewer/refresh
 /vis/viewer/set/picking false
 /vis/viewer/refresh
-/vis/set/touchable worldPhysical 0
+/vis/viewer/set/picking false
+/vis/viewer/refresh
+/vis/viewer/set/picking false
+/vis/viewer/refresh
