@@ -116,6 +116,14 @@ G4VPhysicalVolume* DRsimDetectorConstruction::Construct() {
   fiberS = new G4Tubs("fiberS",0,core_S_rMax,towerH/2.,0*deg,360.*deg);
   fiberCopper = new G4Tubs("fiberCopper",0,core_C_rMax,towerH/2.,0*deg,360.*deg);
 
+  // v4 = dimB->GetV4();
+  copperPlane = new G4Box("copperPlane",
+                          95.4625*mm-1.2*mm-1.0*mm, //x
+                          0.25*mm, //y
+                          towerH/2
+                          ) ;
+//  int numx = (int)(((v4.getX()*tan(phi_unit/2.)*2)-1.2*mm)/(1.01*mm)) + 1;
+//  int numy = (int)((outerSide_half*2-1.2*mm)/(1.01*mm)) + 1;
   // barrel
 
   dimB = new dimensionB();
@@ -128,31 +136,31 @@ G4VPhysicalVolume* DRsimDetectorConstruction::Construct() {
   fulltheta = 0.;
   Barrel(towerLogicalBR,PMTGLogicalBR,PMTfilterLogicalBR,PMTcellLogicalBR,PMTcathLogicalBR,fiberLogical_BR,fiberLogical_BR_,fTowerBR);
 
-  dimB->Rbool(0);
-  fulltheta = 0.;
+  // dimB->Rbool(0);
+  // fulltheta = 0.;
   // Barrel(towerLogicalBL,PMTGLogicalBL,PMTfilterLogicalBL,PMTcellLogicalBL,PMTcathLogicalBL,fiberLogical_BL,fiberLogical_BL_,fTowerBL);
   // draw  left side of barrel towser
 
   // endcap
-  dimE = new dimensionE();
-  dimE->SetInnerR_new(3125.83);
-  dimE->SetTower_height(towerH);
-  dimE->SetNumZRot(sNumZRot);
-  dimE->SetDeltaTheta(fDThetaEndcap);
-  dimE->SetPMTT(PMTT+filterT);
+  // dimE = new dimensionE();
+  // dimE->SetInnerR_new(3125.83);
+  // dimE->SetTower_height(towerH);
+  // dimE->SetNumZRot(sNumZRot);
+  // dimE->SetDeltaTheta(fDThetaEndcap);
+  // dimE->SetPMTT(PMTT+filterT);
 
-  fulltheta = 0.95717;
-  dimE->Rbool(1);
+  // fulltheta = 0.95717;
+  // dimE->Rbool(1);
 
-  // Endcap(towerLogicalER,PMTGLogicalER,PMTfilterLogicalER,PMTcellLogicalER,PMTcathLogicalER,fiberLogical_ER,fiberLogical_ER_,fTowerER);
-  // draw  right side of endcap towser
+  // // Endcap(towerLogicalER,PMTGLogicalER,PMTfilterLogicalER,PMTcellLogicalER,PMTcathLogicalER,fiberLogical_ER,fiberLogical_ER_,fTowerER);
+  // // draw  right side of endcap towser
 
-  // endcap L
-  fulltheta = 0.95717;
-  dimE->Rbool(0);
+  // // endcap L
+  // fulltheta = 0.95717;
+  // dimE->Rbool(0);
 
-  // Endcap(towerLogicalEL,PMTGLogicalEL,PMTfilterLogicalEL,PMTcellLogicalEL,PMTcathLogicalEL,fiberLogical_EL,fiberLogical_EL_,fTowerEL);
-  // draw  left side of endcap towser
+  // // Endcap(towerLogicalEL,PMTGLogicalEL,PMTfilterLogicalEL,PMTcellLogicalEL,PMTcathLogicalEL,fiberLogical_EL,fiberLogical_EL_,fTowerEL);
+  // // draw  left side of endcap towser
 
   delete dimE;
   delete dimB;
@@ -369,18 +377,29 @@ void DRsimDetectorConstruction::fiberBarrel(G4int i, G4double deltatheta_,G4Logi
 
 //  int numx = (int)(((v4.getX()*tan(phi_unit/2.)*2)-1.2*mm)/(1.5*mm)) + 1;
 //  int numy = (int)((outerSide_half*2-1.2*mm)/(1.5*mm)) + 1;
- int numx = (int)(((v4.getX()*tan(phi_unit/2.)*2)-1.2*mm)/(1.01*mm)) + 1;
- int numy = (int)((outerSide_half*2-1.2*mm)/(1.01*mm)) + 1;
+ int numx = (int)(((v4.getX()*tan(phi_unit/2.)*2)-1.2*mm)/(1.0*mm)) + 1;
+ int numy = (int)((outerSide_half*2-1.2*mm)/(1.5*mm)) + 1;
+
+  std::cout << "x length : " << (v4.getX()*tan(phi_unit/2.)*2)  << std::endl;
+
  
  fTowerXY = std::make_pair(numx,numy);
 
  G4bool fWhich = false;
  for (int j = 0; j < numy; j++) {//y-axis
     // std::cout << j << "y : " << fWhich  << std::endl;
-  
+    // if( j%2 == 0 ){
+    //   G4float fX = 0
+    //   G4float fY = -1.5*mm*(numy/2) + j*1.5*mm + ( numy%2==0 ? 0.75*mm : 0 ) - 0.25*mm;
+
+    //   fFiberX.push_back(fX);
+    //   fFiberY.push_back(fY);
+    //   fFiberWhich.push_back(fWhich);
+    // }
    for (int k = 0; k < numx; k++) {//x-axis
-     G4float fX = -1.01*mm*(numx/2) + k*1.01*mm + ( numx%2==0 ? 0.505*mm : 0 ); // radius of fiber is 0.5
-     G4float fY = -1.01*mm*(numy/2) + j*1.01*mm + ( numy%2==0 ? 0.505*mm : 0 );
+     G4float fX = -1.0*mm*(numx/2) + k*1.0*mm + ( numx%2==0 ? 0.50*mm : 0 ); // radius of fiber is 0.5
+      G4float fY = -1.5*mm*(numy/2) + j*1.5*mm + ( numy%2==0 ? 0.75*mm : 0 );
+
     //  G4float fX = -1.5*mm*(numx/2) + k*1.5*mm + ( numx%2==0 ? 0.75*mm : 0 );
     //  G4float fY = -1.5*mm*(numy/2) + j*1.5*mm + ( numy%2==0 ? 0.75*mm : 0 );
     //  fWhich = !fWhich;
@@ -396,10 +415,22 @@ void DRsimDetectorConstruction::fiberBarrel(G4int i, G4double deltatheta_,G4Logi
 
  int fiberOrCopper = 1;
  for (unsigned int j = 0; j<fFiberX.size();j++) {
+    // std::cout <<"j:"<<j<< std::endl;
 
+   if (j == 0){
+        intersect = new G4IntersectionSolid("copperPlane",copperPlane,tower,0,G4ThreeVector(0,-fFiberY.at(j)-0.75*mm,0.));
+        intersect_logical = new G4LogicalVolume(intersect,FindMaterial("Copper"),name);
+        new G4PVPlacement(0,G4ThreeVector(0,fFiberY.at(j)-0.75*mm,0),intersect_logical,name,towerLogical[i],false,j,checkOverlaps);
+        intersect_logical->SetVisAttributes(fVisAttrWhite);
+   }
    if ( !fFiberWhich.at(j) ) { //0, c fibre if false
       if (j > 0){
-        if ( fFiberWhich.at(j-1) ) { fiberOrCopper = 1; }
+        if ( fFiberWhich.at(j-1) ) { fiberOrCopper = 1; 
+        intersect = new G4IntersectionSolid("copperPlane",copperPlane,tower,0,G4ThreeVector(0,-fFiberY.at(j)-0.75*mm,0.));
+        intersect_logical = new G4LogicalVolume(intersect,FindMaterial("Copper"),name);
+        new G4PVPlacement(0,G4ThreeVector(0,fFiberY.at(j)-0.75*mm,0),intersect_logical,name,towerLogical[i],false,j,checkOverlaps);
+        intersect_logical->SetVisAttributes(fVisAttrWhite);
+        }
       }
       
 
@@ -410,12 +441,11 @@ void DRsimDetectorConstruction::fiberBarrel(G4int i, G4double deltatheta_,G4Logi
         intersect = new G4IntersectionSolid("fiber_",fiber,tower,0,G4ThreeVector(-fFiberX.at(j),-fFiberY.at(j),0.));
         fiberLogical[i].push_back(new G4LogicalVolume(intersect,FindMaterial("FluorinatedPolymer"),name));
         new G4PVPlacement(0,G4ThreeVector(fFiberX.at(j),fFiberY.at(j),0),fiberLogical[i].at(j),name,towerLogical[i],false,j,checkOverlaps);
+        fiberLogical[i].at(j)->SetVisAttributes(fVisAttrGray);
 
         intersect_ = new G4IntersectionSolid("fiber_",fiberC,tower,0,G4ThreeVector(-fFiberX.at(j),-fFiberY.at(j),0.));
         fiberLogical_[i].push_back(new G4LogicalVolume(intersect_,FindMaterial("PMMA"),name));
         new G4PVPlacement(0,G4ThreeVector(0.,0.,0.),fiberLogical_[i].at(j),name,fiberLogical[i].at(j),false,j,checkOverlaps);
-
-        fiberLogical[i].at(j)->SetVisAttributes(fVisAttrGray);
         fiberLogical_[i].at(j)->SetVisAttributes(fVisAttrBlue);
 
         fiberOrCopper = 0;
@@ -434,21 +464,18 @@ void DRsimDetectorConstruction::fiberBarrel(G4int i, G4double deltatheta_,G4Logi
 
         fiberLogical[i].at(j)->SetVisAttributes(fVisAttrWhite);
         // fiberLogical_[i].at(j)->SetVisAttributes(fVisAttrWhite);
-        // fiberLogical[i].push_back(new G4LogicalVolume(fiber, FindMaterial("Copper"), name));
-        // new G4PVPlacement(0,G4ThreeVector(fFiberX.at(j),fFiberY.at(j),0),fiberLogical[i].at(j),name,towerLogical[i],false,j,checkOverlaps);
 
-        // // intersect_ = new G4IntersectionSolid("fiber_",fiberCopper,tower,0,G4ThreeVector(-fFiberX.at(j),-fFiberY.at(j),0.));
-        // // fiberLogical_[i].push_back(new G4LogicalVolume(intersect_,FindMaterial("Copper"),name));
-        // // new G4PVPlacement(0,G4ThreeVector(0.,0.,0.),fiberLogical_[i].at(j),name,fiberLogical[i].at(j),false,j,checkOverlaps);
-
-        // fiberLogical[i].at(j)->SetVisAttributes(fVisAttrWhite);
 
         fiberOrCopper = 1;
       }
 
    } else { // s fibre
       if (j > 0){
-        if ( !fFiberWhich.at(j-1) ) { fiberOrCopper = 0; }
+        if ( !fFiberWhich.at(j-1) ) { fiberOrCopper = 0; 
+        intersect = new G4IntersectionSolid("copperPlane",copperPlane,tower,0,G4ThreeVector(0,-fFiberY.at(j)-0.75*mm,0.));
+        intersect_logical = new G4LogicalVolume(intersect,FindMaterial("Copper"),name);
+        new G4PVPlacement(0,G4ThreeVector(0,fFiberY.at(j)-0.75*mm,0),intersect_logical,name,towerLogical[i],false,j,checkOverlaps);
+        intersect_logical->SetVisAttributes(fVisAttrWhite);}
       }
 
       if ( fiberOrCopper ) { // put fiber
@@ -464,11 +491,11 @@ void DRsimDetectorConstruction::fiberBarrel(G4int i, G4double deltatheta_,G4Logi
         intersect_ = new G4IntersectionSolid("fiber_",fiberS,tower,0,G4ThreeVector(-fFiberX.at(j),-fFiberY.at(j),0.));
         fiberLogical_[i].push_back(new G4LogicalVolume(intersect_,FindMaterial("Polystyrene"),name));
         new G4PVPlacement(0,G4ThreeVector(0.,0.,0.),fiberLogical_[i].at(j),name,fiberLogical[i].at(j),false,j,checkOverlaps);
-        std::cout <<"j:"<<j<< ", s fiber core" << std::endl;
+        // std::cout <<"j:"<<j<< ", s fiber core" << std::endl;
 
         fiberLogical[i].at(j)->SetVisAttributes(fVisAttrGray);
         fiberLogical_[i].at(j)->SetVisAttributes(fVisAttrRed);
-        std::cout <<"j:"<<j<< ", s fiber vis" << std::endl;
+        // std::cout <<"j:"<<j<< ", s fiber vis" << std::endl;
 
         fiberOrCopper = 0;
       }
@@ -487,25 +514,20 @@ void DRsimDetectorConstruction::fiberBarrel(G4int i, G4double deltatheta_,G4Logi
 
         fiberLogical[i].at(j)->SetVisAttributes(fVisAttrWhite);
         // fiberLogical_[i].at(j)->SetVisAttributes(fVisAttrWhite);
-        ///////////////////////////////////
-        // intersect = new G4IntersectionSolid("fiber_",fiber,tower,0,G4ThreeVector(-fFiberX.at(j),-fFiberY.at(j),0.));
-        //  = new G4LogicalVolume(trackerTube, Al, "Tracker");
-        // fiberLogical[i].push_back(new G4LogicalVolume(intersect,FindMaterial("Copper"),name));
-        // fiberLogical[i].push_back(new G4LogicalVolume(fiber, FindMaterial("Copper"), name));
-        // new G4PVPlacement(0,G4ThreeVector(fFiberX.at(j),fFiberY.at(j),0),fiberLogical[i].at(j),name,towerLogical[i],false,j,checkOverlaps);
 
-        // // intersect_ = new G4IntersectionSolid("fiber_",fiberCopper,tower,0,G4ThreeVector(-fFiberX.at(j),-fFiberY.at(j),0.));
-        // // fiberLogical_[i].push_back(new G4LogicalVolume(intersect_,FindMaterial("Copper"),name));
-        // // new G4PVPlacement(0,G4ThreeVector(0.,0.,0.),fiberLogical_[i].at(j),name,fiberLogical[i].at(j),false,j,checkOverlaps);
-
-        // fiberLogical[i].at(j)->SetVisAttributes(fVisAttrWhite);
-        // // fiberLogical_[i].at(j)->SetVisAttributes(fVisAttrWhite);
 
         fiberOrCopper = 1;
       }
    }
+  if ( j == fFiberX.size()-1){
+    intersect = new G4IntersectionSolid("copperPlane",copperPlane,tower,0,G4ThreeVector(0,-fFiberY.at(j)+0.75*mm,0.));
+    intersect_logical = new G4LogicalVolume(intersect,FindMaterial("Copper"),name);
+    new G4PVPlacement(0,G4ThreeVector(0,fFiberY.at(j)+0.75*mm,0),intersect_logical,name,towerLogical[i],false,j,checkOverlaps);
+    intersect_logical->SetVisAttributes(fVisAttrWhite);
+  }
+  
  }
-}
+  }
 
 void DRsimDetectorConstruction::fiberEndcap(G4int i, G4double deltatheta_, G4LogicalVolume* towerLogical[], std::vector<G4LogicalVolume*> fiberLogical[], std::vector<G4LogicalVolume*> fiberLogical_[]) 
 {

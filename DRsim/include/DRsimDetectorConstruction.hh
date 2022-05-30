@@ -94,7 +94,9 @@ private:
   G4Tubs* fiberS;
   G4Tubs* fiberC;
   G4Tubs* fiberCopper;
+  G4Box* copperPlane; //copper plane
   G4VSolid* intersect;
+  G4LogicalVolume* intersect_logical;
   G4VSolid* intersect_;
 
   G4LogicalVolume* towerLogicalBR[52];
