@@ -65,6 +65,7 @@ private:
   G4VisAttributes* fVisAttrGreen;
   G4VisAttributes* fVisAttrRed;
   G4VisAttributes* fVisAttrWhite;
+  G4VisAttributes* fVisAttrBlack;
 
   G4double innerR;
   G4double towerH;
@@ -95,11 +96,16 @@ private:
   G4Tubs* fiberC;
   G4Tubs* fiberCopper;
   G4Box* copperPlane; //copper plane
+  G4Box* tower_shell; //copper plane
+  G4Box* tower_in; //copper plane
   G4VSolid* intersect;
   G4LogicalVolume* intersect_logical;
+  G4LogicalVolume* tower_shell_Log;
+  G4LogicalVolume* tower_in_Log;
   G4VSolid* intersect_;
 
   G4LogicalVolume* towerLogicalBR[52];
+  G4LogicalVolume* towerInLogicalBR[52];
   G4LogicalVolume* towerLogicalBL[52];
 
   G4LogicalVolume* towerLogicalER[40];
