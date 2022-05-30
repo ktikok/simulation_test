@@ -479,7 +479,7 @@ void DRsimDetectorConstruction::fiberBarrel(G4int i, G4double deltatheta_,G4Logi
         intersect_logical->SetVisAttributes(fVisAttrOrange);
         }
       }
-      
+      //for parallel
 
       if ( fiberOrCopper ) { // put fiber
         // std::cout <<"j:"<<j<< ", c fiber " << std::endl;
