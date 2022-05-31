@@ -94,7 +94,9 @@ private:
   G4Tubs* fiber_C;
   G4Tubs* fiberS;
   G4Tubs* fiberC;
-  G4Tubs* fiberCopper;
+  // G4EllipticalTube* fiberCopper; //haha
+  G4VSolid* fiberCopper;
+
   G4Box* copperPlane; //copper plane
   G4Box* tower_shell; //copper plane
   G4Box* tower_in; //copper plane

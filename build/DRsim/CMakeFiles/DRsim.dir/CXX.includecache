@@ -570,6 +570,16 @@ vector
 G4Element.hh
 /cvmfs/geant4.cern.ch/geant4/10.5.p01/x86_64-centos7-gcc8-opt-MT/include/Geant4/G4Element.hh
 
+/cvmfs/geant4.cern.ch/geant4/10.5.p01/x86_64-centos7-gcc8-opt-MT/include/Geant4/G4EllipticalTube.hh
+G4VSolid.hh
+/cvmfs/geant4.cern.ch/geant4/10.5.p01/x86_64-centos7-gcc8-opt-MT/include/Geant4/G4VSolid.hh
+G4Polyhedron.hh
+/cvmfs/geant4.cern.ch/geant4/10.5.p01/x86_64-centos7-gcc8-opt-MT/include/Geant4/G4Polyhedron.hh
+G4EllipticalTube.icc
+/cvmfs/geant4.cern.ch/geant4/10.5.p01/x86_64-centos7-gcc8-opt-MT/include/Geant4/G4EllipticalTube.icc
+
+/cvmfs/geant4.cern.ch/geant4/10.5.p01/x86_64-centos7-gcc8-opt-MT/include/Geant4/G4EllipticalTube.icc
+
 /cvmfs/geant4.cern.ch/geant4/10.5.p01/x86_64-centos7-gcc8-opt-MT/include/Geant4/G4EnvironmentUtils.hh
 cstdlib
 -
@@ -1801,6 +1811,8 @@ G4PVPlacement.hh
 /fcc/tikim/ky_example/DR_tag_001/DRsim/src/G4PVPlacement.hh
 G4PVParameterised.hh
 /fcc/tikim/ky_example/DR_tag_001/DRsim/src/G4PVParameterised.hh
+G4EllipticalTube.hh
+/fcc/tikim/ky_example/DR_tag_001/DRsim/src/G4EllipticalTube.hh
 G4IntersectionSolid.hh
 /fcc/tikim/ky_example/DR_tag_001/DRsim/src/G4IntersectionSolid.hh
 G4SDManager.hh

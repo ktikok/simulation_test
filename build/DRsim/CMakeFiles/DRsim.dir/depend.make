@@ -983,6 +983,8 @@ DRsim/CMakeFiles/DRsim.dir/src/DRsimDetectorConstruction.cc.o: /cvmfs/geant4.cer
 DRsim/CMakeFiles/DRsim.dir/src/DRsimDetectorConstruction.cc.o: /cvmfs/geant4.cern.ch/geant4/10.5.p01/x86_64-centos7-gcc8-opt-MT/include/Geant4/G4Element.hh
 DRsim/CMakeFiles/DRsim.dir/src/DRsimDetectorConstruction.cc.o: /cvmfs/geant4.cern.ch/geant4/10.5.p01/x86_64-centos7-gcc8-opt-MT/include/Geant4/G4ElementTable.hh
 DRsim/CMakeFiles/DRsim.dir/src/DRsimDetectorConstruction.cc.o: /cvmfs/geant4.cern.ch/geant4/10.5.p01/x86_64-centos7-gcc8-opt-MT/include/Geant4/G4ElementVector.hh
+DRsim/CMakeFiles/DRsim.dir/src/DRsimDetectorConstruction.cc.o: /cvmfs/geant4.cern.ch/geant4/10.5.p01/x86_64-centos7-gcc8-opt-MT/include/Geant4/G4EllipticalTube.hh
+DRsim/CMakeFiles/DRsim.dir/src/DRsimDetectorConstruction.cc.o: /cvmfs/geant4.cern.ch/geant4/10.5.p01/x86_64-centos7-gcc8-opt-MT/include/Geant4/G4EllipticalTube.icc
 DRsim/CMakeFiles/DRsim.dir/src/DRsimDetectorConstruction.cc.o: /cvmfs/geant4.cern.ch/geant4/10.5.p01/x86_64-centos7-gcc8-opt-MT/include/Geant4/G4EnvironmentUtils.hh
 DRsim/CMakeFiles/DRsim.dir/src/DRsimDetectorConstruction.cc.o: /cvmfs/geant4.cern.ch/geant4/10.5.p01/x86_64-centos7-gcc8-opt-MT/include/Geant4/G4Exception.hh
 DRsim/CMakeFiles/DRsim.dir/src/DRsimDetectorConstruction.cc.o: /cvmfs/geant4.cern.ch/geant4/10.5.p01/x86_64-centos7-gcc8-opt-MT/include/Geant4/G4ExceptionSeverity.hh
