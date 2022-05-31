@@ -9,6 +9,7 @@
 #include "G4Trap.hh"
 #include "G4Box.hh"
 #include "G4Tubs.hh"
+#include "G4EllipticalTube.hh"
 #include "G4VSolid.hh"
 #include "G4LogicalVolume.hh"
 #include "G4VSensitiveDetector.hh"
@@ -95,8 +96,9 @@ private:
   G4Tubs* fiberS;
   G4Tubs* fiberC;
   // G4EllipticalTube* fiberCopper; //haha
-  G4VSolid* fiberCopper;
-
+  // G4VSolid* fiberCopper;
+  
+  G4EllipticalTube* fiberCopper;
   G4Box* copperPlane; //copper plane
   G4Box* tower_shell; //copper plane
   G4Box* tower_in; //copper plane

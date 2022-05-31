@@ -6,7 +6,6 @@
 #include "G4VPhysicalVolume.hh"
 #include "G4PVPlacement.hh"
 #include "G4PVParameterised.hh"
-#include "G4EllipticalTube.hh"
 
 #include "G4IntersectionSolid.hh"
 #include "G4SDManager.hh"
@@ -121,7 +120,7 @@ G4VPhysicalVolume* DRsimDetectorConstruction::Construct() {
   fiberC = new G4Tubs("fiberC",0,core_C_rMax,towerH/2.,0*deg,360.*deg);
   fiberS = new G4Tubs("fiberS",0,core_S_rMax,towerH/2.,0*deg,360.*deg);
   // fiberCopper = new G4Tubs("fiberCopper",0, 8.0/15.0/2*mm , towerH/2.,0*deg,360.*deg);
-  G4EllipticalTube* fiberCopper = new G4EllipticalTube("fiberCopper",
+  fiberCopper = new G4EllipticalTube("fiberCopper",
                                       8.0/15.0/2,
                                       clad_C_rMax,
                                       towerH/2.0
