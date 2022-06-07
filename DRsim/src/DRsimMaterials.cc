@@ -64,7 +64,15 @@ void DRsimMaterials::CreateMaterials() {
   fFe = new G4Material("Iron", z=26., a=55.845*g/mole, density=7.874*g/cm3);
   fW = new G4Material("Tungsten", z=74., a=183.84*g/mole, density=19.3*g/cm3);
   fSi = new G4Material("Silicon", z=14., a=28.09*g/mole, density=2.33*g/cm3);
-
+  fCuZn37 = new G4Material(name="Brass", density=8.44*g/cm3, 2);
+  //a = 63.546*g/mole;
+  //G4Element* elCu = new G4Element("Copper", symbol="Cu", z=29., a); //Copper
+  auto elCu = nistManager->FindOrBuildElement(29, true);
+  //a = 65.38*g/mole;
+  //G4Element* elZn = new G4Element("Zinc", symbol="Zn", z=30., a); //Zinc
+  auto elZn = nistManager->FindOrBuildElement(30, true);
+  fCuZn37->AddElement(elCu, 0.7);
+  fCuZn37->AddElement(elZn, 0.3);
   fVacuum = G4Material::GetMaterial("G4_Galactic");
   fAir = G4Material::GetMaterial("G4_AIR");
 

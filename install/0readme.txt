@@ -156,6 +156,7 @@ scp -r -P 50002 ./results/ tikim@165.132.25.82:/data4/tikim/simulation_result/
 
 ------------------------------------------------------
 ------------------------------------------------------
+cd /fcc/tikim/ky_example/DR_tag_001/install ; source setenv-KISTI.sh
 
 cd /fcc/tikim/ky_example/DR_tag_001/build/; make -j12 install; cd /fcc/tikim/ky_example/DR_tag_001/install; ./bin/DRsim
 ./bin/DRsim
@@ -172,6 +173,16 @@ cd /fcc/tikim/ky_example/DR_tag_001/build/; make -j12 install; cd /fcc/tikim/ky_
 /DRsim/generator/y0 -3.1132348
 /DRsim/generator/z0 -4.716005797
 /gun/particle e-
-/gun/energy 100 keV
+/gun/energy 5 GeV
+/run/beamOn 1
+
+/DRsim/generator/randx 10
+/DRsim/generator/randy 10
+/DRsim/generator/theta -0.03728991884
+/DRsim/generator/phi 0.017453293
+/DRsim/generator/y0 -3.1132348
+/DRsim/generator/z0 -4.716005797
+/gun/particle e-
+/gun/energy 5 MeV
 /run/beamOn 1
 -------------------------------------0---------------------------------------- 0
